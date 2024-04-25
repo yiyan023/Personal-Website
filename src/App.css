@@ -1,3 +1,9 @@
+@font-face {
+	font-family: Solitreo;
+	src: url('fonts/PlaypenSans-Medium.ttf');
+	font-weight: 700;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +21,7 @@
 	position: relative;
 	background-color: #121212 !important;
 	color: #fff !important;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Solitreo;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -34,14 +40,14 @@
   }
   nav.navbar.scrolled {
 	padding: 0px 0;
-	background-color: #121212;
+	background-color: 121212;
   }
   nav.navbar a.navbar-brand {
 	  width: 9%;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
 	font-weight: 400;
-	color: #fff !important;
+	color: #8084ff !important;
 	letter-spacing: 0.8px;
 	padding: 0 25px;
 	font-size: 18px;
@@ -57,26 +63,27 @@
   }
   .social-icon {
 	  display: inline-block;
-	  margin-left: 14px;
+	  margin-left: 50px;
   }
   .social-icon a {
-	  width: 42px;
-	  height: 42px;
-	  background: rgb(255, 255, 255);
+	  width: 35px;
+	  height: 35px;
+	  background: 121212;
 	  display: inline-flex;
 	  border-radius: 50%;
-	  margin-right: 6px;
 	  align-items: center;
 	  justify-content: center;
 	  line-height: 1;
 	  border: 1px solid rgb(128, 132, 255);
+	  margin-right: 15px;
   }
+
   .social-icon a::before {
 	  content: "";
 	  width: 42px;
 	  height: 42px;
 	  position: absolute;
-	  background-color: rgb(196, 162, 255);
+	  background-color: #8084ff;
 	  border-radius: 50%;
 	  transform: scale(0);
 	  transition: 0.3s ease-in-out;
@@ -85,13 +92,15 @@
 	  transform: scale(1);
   }
   .social-icon a img {
-	  width: 40%;
+	  width: 100%;
+	  height: 100%;
 	  z-index: 1;
 	  transition: 0.3s ease-in-out;
   }
   .social-icon a:hover img {
-	  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+	  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) brightness(95%) contrast(86%);
   }
+ 
   .navbar-text button {
 	font-weight: 700;
 	color: #fff;
