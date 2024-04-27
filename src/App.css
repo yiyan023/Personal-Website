@@ -37,11 +37,6 @@
 	position: relative;
 	color: #fff !important;
 	font-family: Averia;
-	background-image: url('assets/ocean.jpg');
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -206,7 +201,23 @@
   .banner {
 	margin-top: 0;
 	padding: 260px 0 315px 0;
+	background-image: url('assets/ocean.jpg');
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
   }
+
+  .banner .banner-text {
+	min-height: 11rem;
+  }
+
+  @media (max-width: 1199px) {
+    .banner .banner-text {
+        min-height: 18rem;
+    }
+	}
 
   .banner .tagline {
 	font-weight: 700;
@@ -256,7 +267,7 @@
   .banner .resume:hover {
 	margin-left: 25px;
   }
-  .banner img {
+  .about img {
 	height: 80%;
 	width: 80%;
 	animation: updown 3s linear infinite;
@@ -297,24 +308,53 @@
   }
 
   .banner .next {
-	position: fixed;
-    bottom: 5%; 
+	position: absolute;
+    bottom: 57%; 
     left: 50%; 
     transform: translateX(-50%);
     display: flex; 
     justify-content: center;
-    align-items: center; 
     width: 100%;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0; 
   }
 
   .banner .next:hover {
 	transform: translateX(-50%) scale(1.3); 
+	opacity: 100;
   }
 
   .banner .next-button {
 	background-color: transparent;
 	border: transparent;
-	color:#fff;
+	color: transparent;
+	height: 150px;
+	width: 150px;
+  }
+
+  .banner .next-button:hover {
+	color: #fff;
+  }
+
+  .about {
+	background-color: rgb(27, 1, 53);
+	margin-top: 0;
+	padding: 125px 0 200px 0;
+	justify-content: right;
+  }
+
+  .about h1 {
+	font-size: 65px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: block;
+	color: rgb(190, 176, 255);
+  }
+
+  .about .normal-text {
+	font-family: Poppins;
+	width: 80%;
   }
   
