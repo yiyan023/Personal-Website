@@ -33,17 +33,15 @@
   
   body {
 	font-weight: 400;
+	overflow-x: hidden;
+	position: relative;
+	color: #fff !important;
+	font-family: Averia;
 	background-image: url('assets/ocean.jpg');
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	overflow: hidden;
-	overflow-x: hidden;
-	position: relative;
-	background-color: #121212 !important;
-	color: #fff !important;
-	font-family: Averia;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -53,12 +51,14 @@
   }
 
   nav.navbar {
-	padding: 18px 0;
+	padding: 10px 0;
 	position: fixed;
+	height: 17%;
 	width: 100%;
 	top: 0;
 	z-index: 9999;
 	transition:  0.32s ease-in-out;
+	background-color: rgb(27, 1, 53)
   }
   nav.navbar.scrolled {
 	padding: 0px 0;
@@ -205,7 +205,7 @@
 
   .banner {
 	margin-top: 0;
-	padding: 260px 0 100px 0;
+	padding: 260px 0 315px 0;
   }
 
   .banner .tagline {
@@ -235,7 +235,7 @@
 	line-height: 1.5em;
 	width: 96%;
   }
-  .banner button {
+  .banner .resume-button {
 	background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
 	font-weight: 700;
 	font-family: Averia;
@@ -247,29 +247,32 @@
 	display: flex;
 	align-items: center;
   }
-  .banner button svg {
+  .banner .resume{
 	font-size: 25px;
 	margin-left: 10px;
 	transition: 0.3s ease-in-out;
 	line-height: 1;
   }
-  .banner button:hover svg {
+  .banner .resume:hover {
 	margin-left: 25px;
   }
   .banner img {
+	height: 80%;
+	width: 80%;
 	animation: updown 3s linear infinite;
   }
   @keyframes updown {
 	  0% {
-		  transform: translateY(-20px);
+		  transform: translateY(-8px);
 	  }
 	  50% {
-		  transform: translateY(20px);
+		  transform: translateY(8px);
 	  }
 	  100% {
-		  transform: translateY(-20px);
+		  transform: translateY(-8px);
 	  }
   }
+  
   .txt-rotate > .wrap {
 	border-right: 0.08em solid #666;
   }
@@ -291,5 +294,27 @@
 
   .normal-text {
 	font-family: Poppins;
+  }
+
+  .banner .next {
+	position: fixed;
+    bottom: 5%; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+	transition: all 0.3s ease-in-out;
+  }
+
+  .banner .next:hover {
+	transform: translateX(-50%) scale(1.3); 
+  }
+
+  .banner .next-button {
+	background-color: transparent;
+	border: transparent;
+	color:#fff;
   }
   

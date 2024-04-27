@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDownCircleFill, ArrowDownLeft, ArrowDownShort, ArrowDownUp, ArrowRightCircle, ArrowRightShort, BoxArrowDown } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
+import Portrait from '../assets/portrait.png';
 
 export const Banner = () => {
 	const toRotate = ["Software Engineer,", "Full Stack Developer,", "Web Developer,", "Backend Developer,", ]
@@ -47,12 +48,17 @@ export const Banner = () => {
 						<h1 className="name">{`Hi, I'm Yiyan Huang:`}</h1>
 						<h1 className="role">{text}</h1>
 						<p className="normal-text">A first-year CS student at the University of Waterloo</p>
-						<button onClick={() => console.log('connect')}>View Resume <ArrowRightCircle size={25} /> </button>
+						<button class="resume-button"onClick={() => window.location.href = 'https://drive.google.com/file/d/1aetfS8boNtyLgm5TDWQbJ8Swtr34fNAA/view?usp=sharing'}> View Resume <ArrowRightCircle className="resume" size={25} /> </button>
 					</Col>
 					<Col xs={12} md={6} xl={5}>
+					
 					</Col>
 				</Row>
 			</Container>
+
+			<div className="next">
+				<button class="next-button"><ArrowDownShort size={50} /> </button>
+			</div>
 		</section>
 	)
 }
