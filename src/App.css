@@ -200,24 +200,17 @@
 
   .banner {
 	margin-top: 0;
-	padding: 260px 0 315px 0;
+	padding: 250px 15px 250px 15px;
 	background-image: url('assets/ocean.jpg');
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
   }
 
-  .banner .banner-text {
-	min-height: 11rem;
+  .banner .fix-height {
+	min-height: 55px;
   }
-
-  @media (max-width: 1199px) {
-    .banner .banner-text {
-        min-height: 18rem;
-    }
-	}
 
   .banner .tagline {
 	font-weight: 700;
@@ -254,10 +247,12 @@
 	padding: 8px 10px;
 	color: white;
 	font-size: 20px;
-	margin-top: 60px;
+	margin-top: 2em;
 	display: flex;
 	align-items: center;
+	z-index: 9999;
   }
+
   .banner .resume{
 	font-size: 25px;
 	margin-left: 10px;
@@ -267,23 +262,28 @@
   .banner .resume:hover {
 	margin-left: 25px;
   }
+
+  @keyframes upDown {
+    0% {
+		transform: translateY(-8px);
+	} 
+
+	50% {
+		transform: translateY(8px);
+	}
+
+	100% {
+		transform: translateY(-8px);
+	}
+}
+
   .about img {
-	height: 80%;
-	width: 80%;
-	animation: updown 3s linear infinite;
+	height: 75%;
+	width: 75%;
+	animation: upDown 3s linear infinite;
+
   }
-  @keyframes updown {
-	  0% {
-		  transform: translateY(-8px);
-	  }
-	  50% {
-		  transform: translateY(8px);
-	  }
-	  100% {
-		  transform: translateY(-8px);
-	  }
-  }
-  
+
   .txt-rotate > .wrap {
 	border-right: 0.08em solid #666;
   }
@@ -309,8 +309,8 @@
 
   .banner .next {
 	position: absolute;
-    bottom: 57%; 
     left: 50%; 
+	top: 37%;
     transform: translateX(-50%);
     display: flex; 
     justify-content: center;
@@ -328,8 +328,8 @@
 	background-color: transparent;
 	border: transparent;
 	color: transparent;
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
   }
 
   .banner .next-button:hover {
@@ -339,12 +339,12 @@
   .about {
 	background-color: rgb(27, 1, 53);
 	margin-top: 0;
-	padding: 125px 0 200px 0;
+	padding: 125px 0 125px 0;
 	justify-content: right;
   }
 
   .about h1 {
-	font-size: 65px;
+	font-size: 80px;
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	line-height: 1;
@@ -353,8 +353,31 @@
 	color: rgb(190, 176, 255);
   }
 
-  .about .normal-text {
-	font-family: Poppins;
-	width: 80%;
+  .about .portrait {
+	align-items: center;
   }
+
+  .about .introduction {
+	font-size: 20px;
+	font-family: Poppins;
+	max-width: 500px;
+	color: rgb(255, 255, 255);
+  }
+
+  .about a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-decoration: none; 
+	margin-bottom: 10px;
+	font-size: 18px;
+  }
+
+  .about a:hover {
+	color: rgb(190, 176, 255);
+  }
+
+  .about a:active {
+	color: rgb(160, 139, 253);
+  }
+  
   

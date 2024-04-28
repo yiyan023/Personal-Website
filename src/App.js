@@ -1,17 +1,23 @@
 import logo from './logo.svg';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { About } from "./components/About"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 import './App.css';
+import Home from './components/Home'
+import Skills from './components/Skills'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 function App() {
   return (
-    <div className="App">
-        <NavBar />
-		<Banner />
-		<About />
-    </div>
+    <Router>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/skills" element={<Skills />} /> 
+			<Route path="/experiences" element={<Experience />} />
+			<Route path="/projects" element={<Projects />} />
+		</Routes>
+	</Router>
   );
 }
 
