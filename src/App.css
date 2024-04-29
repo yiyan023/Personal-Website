@@ -420,11 +420,65 @@
 	border-color: transparent;
 	flex-direction: column;
 	padding: 35px 0 35px 0;
-	margin: 2px;
+	margin: 0.5rem; 
 	border-radius: 0.5rem;
-  }
+	transition: 0.3s ease;
+	box-shadow: 2px 2px 0 3px rgb(190, 176, 255, 0.5);
+}
 
   .list .skill:hover {
 	border-color: #fff;
-	box-shadow: 4px 4px 4px 4px #a08bfd;
+	transform: translateY(-10px);
+	box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+	
   }
+
+  .awards {
+	background-color: #1b0135;
+  }
+
+  .awards h1 {
+	color: #a08bfd;
+	text-align: center;
+	margin-bottom: 5px;
+  }
+
+  .awards p {
+	text-align: center;
+  }
+  
+  .awards .intro-paragraph {
+	font-family: Poppins;
+	padding: 0 50px 0 50px;
+  }
+
+  .awards h2 {
+	font-family: Roboto;
+	font-size: 25px;
+	text-align: center;
+  }
+
+  .awards .awards-grid {
+	padding: 50px 0 100px 0;
+  }
+
+  .awards .award {
+	padding: 5px;
+	margin: 10px;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+  }
+
+  .awards img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	border-radius: 0.5rem;
+  }
+
+  .awards .description {
+	background-color: #1b0135;
+	margin: 10px;
+	padding: 5px;
+  }
+
