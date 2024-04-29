@@ -337,7 +337,7 @@
   }
 
   .about {
-	background-color: rgb(27, 1, 53);
+	background-color: #1b0135;
 	margin-top: 0;
 	padding: 125px 0 125px 0;
 	justify-content: right;
@@ -377,7 +377,35 @@
   }
 
   .about a:active {
-	color: rgb(160, 139, 253);
+	color: #a08bfd;
+  }
+
+  .skill {
+	background-color: #1b0135;
+  }
+
+  .list {
+	margin-top: 0;
+	padding: 125px 0 125px 0;
+	justify-content: right;
+  }
+
+  .list h1 {
+	color: #fff;
+  }
+
+  .list .name {
+	text-align: center;
+	margin-bottom: 50px;
+  }
+
+  .list img {
+	height: 5rem;
+	margin-bottom: 15px;
   }
   
+  .list p {
+	font-family: Roboto;
+	font-size: 20px;
+  }
   
