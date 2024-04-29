@@ -385,13 +385,13 @@
   }
 
   .list {
-	margin-top: 0;
+	margin-top: 40px;
 	padding: 125px 0 125px 0;
 	justify-content: right;
   }
 
   .list h1 {
-	color: #fff;
+	color: #a08bfd;
   }
 
   .list .name {
@@ -400,12 +400,31 @@
   }
 
   .list img {
-	height: 5rem;
+	height: 4.5em; 
+	width: auto;
+	max-width: 100%;
 	margin-bottom: 15px;
   }
   
   .list p {
 	font-family: Roboto;
 	font-size: 20px;
+	margin-bottom: 0;
   }
   
+  .list .skill {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid;
+	border-color: transparent;
+	flex-direction: column;
+	padding: 35px 0 35px 0;
+	margin: 2px;
+	border-radius: 0.5rem;
+  }
+
+  .list .skill:hover {
+	border-color: #fff;
+	box-shadow: 4px 4px 4px 4px #a08bfd;
+  }
