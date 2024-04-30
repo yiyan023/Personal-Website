@@ -537,3 +537,75 @@
 	transform: scale(1.1);
   }
 
+  .education {
+	background-color: #1b0135;
+	margin-top: 40px;
+	padding: 125px 0 125px 0;
+  }
+
+  .education h1 {
+	color: #a08bfd;
+	text-align: center;
+	margin-bottom: 60px;
+  }
+
+  .education .h2 {
+	font-family: Roboto;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+  }
+
+  .education .h2:hover {
+	color: #e2dcff;
+  }
+
+  .education .h2:active {
+	color: #bdb0fa;
+  }
+
+  .education h3 {
+	font-size: 15px;
+	font-style: italic;
+	font-family: Poppins;
+  }
+
+  .education p {
+	font-family: Poppins;
+  }
+
+  .education img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  .education h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+
+  .education li {
+	font-family: Poppins;
+	margin-bottom: 5px;
+  }
+
+  .education .education-timeline {
+	margin: 20px;
+	justify-content: center;
+	display: flex;
+  }
+
+  .education .school-info {
+	position: relative;
+  }
+
+  .education .dropdown-content {
+	display: block;
+	position: absolute;
+	bottom: 0%;
+	background-color: #1b0135;
+  }
+
+  .education .triangle-fill {
+    transition: transform 0.5s ease;
+}

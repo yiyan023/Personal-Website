@@ -21,10 +21,8 @@ const Awards = () => {
 
 	return (
 		<div class="awards">
-			<div className='test'>
 			<h1 data-aos="fade-in" data-aos-delay="300">Awards</h1>
 			<div data-aos="fade-in" data-aos-delay="300" className='intro-paragraph'><p>Here are some of the awards I have won that show my accomplishments and interests!</p></div>
-			</div>
 			<Container className='awards-grid'>
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
 					<Col className="award" xs={12} md={10} xl={5} >
