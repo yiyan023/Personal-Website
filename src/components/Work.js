@@ -71,7 +71,7 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date="Sept 2019 - Aug 2023"
+					date="Jun 2021- Aug 2021"
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<School />}
 				>
