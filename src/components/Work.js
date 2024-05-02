@@ -2,7 +2,9 @@ import { React, useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
-import WorkIcon from '@mui/icons-material/Work';
+import CodeIcon from '@mui/icons-material/Code';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import School from '@mui/icons-material/School'
 
 import AOS from 'aos'
 import 'aos/dist/aos'
@@ -25,7 +27,7 @@ const Work = () => {
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
 					date="Sept 2024 - present"
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
-					icon={<WorkIcon />}
+					icon={<CodeIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3>
 					<h4 className="vertical-timeline-element-subtitle">Boston, Massachusetts</h4>
@@ -39,7 +41,7 @@ const Work = () => {
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
 					date="May 2024 - present"
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
-					icon={<WorkIcon />}
+					icon={<CodeIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">Software Developer | Rich Media</h3>
 					<h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
@@ -53,7 +55,7 @@ const Work = () => {
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
 					date="Sept 2019 - Aug 2023"
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
-					icon={<WorkIcon />}
+					icon={<PrecisionManufacturingIcon />}
 				>
 					<h3 className="vertical-timeline-element-title">Software Developer | FIRST Robotics</h3>
 					<h4 className="vertical-timeline-element-subtitle">Ottawa, ON</h4>
@@ -71,7 +73,7 @@ const Work = () => {
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
 					date="Sept 2019 - Aug 2023"
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
-					icon={<WorkIcon />}
+					icon={<School />}
 				>
 					<h3 className="vertical-timeline-element-title">Software Mentor | CoderSports</h3>
 					<h4 className="vertical-timeline-element-subtitle">Ottawa, ON</h4>

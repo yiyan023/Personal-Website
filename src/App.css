@@ -663,6 +663,7 @@
 .volunteer h1 {
 	text-align: center;
 	color:#a08bfd;
+	margin-bottom: 10px;
 }
 
 .volunteer .intro {
@@ -684,7 +685,6 @@
 .volunteer img {
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 20px;
 	border-radius: 0.5em;
 }
 
@@ -695,6 +695,16 @@
 	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
 	position: relative;
 }
+
+.volunteer .description {
+	background-color: #1b0135;
+	margin: 50px 20px 20px 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
 
 .volunteer .image-container {
 	overflow: hidden;
@@ -732,6 +742,13 @@
 	display: block;
 }
 
-  .volunteer event:hover img {
+  .volunteer .event:hover img {
 	transform: scale(1.1);
+  }
+
+  .volunteer .explain {
+	font-family: Poppins;
+	padding: 0 50px 0 50px;
+	font-size: 20px;
+	text-align: center;
   }
