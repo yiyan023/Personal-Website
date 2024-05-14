@@ -31,7 +31,7 @@ const Volunteer = () => {
 					</div>
 					<div className='description'>
 						<h2>NCCP Level 1 Certified Badminton Coach</h2>
-						<p className='describe'>Sept 2019 - Aug 2023 - Soong Badminton Academy</p>
+						<p className='describe'>Sept 2019 - Aug 2023 | Soong Badminton Academy</p>
 					</div>
 				</Col>
 				<Col className='event' xs={12} md={10} xl={5}>
@@ -43,7 +43,7 @@ const Volunteer = () => {
 					</div>
 					<div className='description'>
 						<h2>Piano Teacher</h2>
-						<p className='describe'>Sept 2021 - Aug 2023 - Janet's Music School</p>
+						<p className='describe'>Sept 2021 - Aug 2023 | Janet's Music School</p>
 					</div>
 				</Col>
 			</Row>
@@ -57,7 +57,7 @@ const Volunteer = () => {
 					</div>
 					<div className='description'>
 						<h2>Line Judge</h2>
-						<p className='describe'>Sept 2022 - Aug 2023 - BWF Para-badminton</p>
+						<p className='describe'>Sept 2022 - Aug 2023 | BWF Para-badminton</p>
 					</div>
 				</Col>
 				<Col className='event' xs={12} md={10} xl={5}>
@@ -69,7 +69,7 @@ const Volunteer = () => {
 					</div>
 					<div className='description'>
 						<h2>Tournament Coordinator</h2>
-						<p className='describe'>Sept 2022 - Oct 2022 - Soong Badminton Academy</p>
+						<p className='describe'>Sept 2022 - Oct 2022 | Soong Badminton Academy</p>
 					</div>
 				</Col>
 			</Row>
