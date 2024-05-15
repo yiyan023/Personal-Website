@@ -1,9 +1,13 @@
 import React from 'react'
 import { NavBar } from "./NavBar";
+import Portfolio from './Portfolio';
 
 const Projects = () => {
   return (
-	<NavBar />
+	<div className='projects'>
+		<NavBar />
+		<Portfolio />
+	</div>
   )
 }
 
