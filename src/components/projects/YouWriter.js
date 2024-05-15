@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
+import { Github, PlayBtnFill } from 'react-bootstrap-icons'
+
 import YouWriterImg from '../../assets/projects/youwriter.png'
 import JavaScript from '../../assets/javascript.png'
 import Python from '../../assets/python.png'
@@ -12,7 +14,7 @@ const YouWriter = () => {
 	<div className='project'>
 		<Container className=''>
 			<Row className='align-items-center justify-content-center'>
-				<Col xs={12} md={10} xl={6} className='project-image'>
+				<Col xs={12} md={10} xl={7} className='project-image'>
 					<div className='image-container'>
 						<img className="project-banner" src={YouWriterImg} />
 					</div>
@@ -22,26 +24,32 @@ const YouWriter = () => {
 									<Col xs={5} md={4} xl={4} className='tech-summary'>
 										<p>YouWriter is a full stack application that converts any YouTube video into a written summary.</p>
 									</Col>
-									<Col xs={3} md={5} xl={5} >
+									<Col xs={5} md={6} xl={6} >
 									</Col>
 									<Col xs={1} md={1} xl={1} className='tech-stack'>
-										<img className="tech" src={MongoDB} />
-									</Col>
-									<Col xs={1} md={1} xl={1} className='tech-stack'>
-										<img className="tech" src={JavaScript} />
+									<img className="tech" src={JavaScript} />
 										<img className="tech" src={Python} />
 										<img className="tech" src={ReactJS} />
 										<img className="tech" src={Flask} />
+										<img className="tech" src={MongoDB} />
 									</Col>
 								</Row>
 							</Container>
 						</div>
 				</Col>
-				<Col xs={12} md={10} xl={4} className='project-description'>
+				<Col xs={12} md={10} xl={4} className='project-description text-center text-xl-start justify-content-center'>
 					<h2>YouWriter</h2>
 					<h3>Full Stack Web Application</h3>
-					<button>GitHub</button>
-					<button>Demo</button>
+					<hr />
+					<p>Aims to increase note-taking efficiency for students of all demographics</p>
+					<button onClick={() => window.location.href = "https://github.com/yiyan023/YouWriter"}>
+						GitHub 
+						<Github className="social-icons" size={18}/>
+					</button>
+					<button onClick={() => window.location.href = "https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing"}>
+						Demo
+						<PlayBtnFill className="social-icons" size={18}/>
+					</button>
 				</Col>
 			</Row>
 		</Container>
