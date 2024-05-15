@@ -852,6 +852,10 @@
 	background-color: #1b0135;
   }
 
+  .projects .introduction {
+	text-align: center;
+  }
+
   .projects h1 {
 	text-align: center;
 	color: #a08bfd;
