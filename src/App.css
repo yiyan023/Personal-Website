@@ -48,7 +48,7 @@
   nav.navbar {
 	padding: 10px 0;
 	position: fixed;
-	height: 17%;
+	height: 120px;
 	width: 100%;
 	top: 0;
 	z-index: 9999;
@@ -336,7 +336,7 @@
   }
 
   .about {
-	background-color: #1b0135;
+	background-color: #0f011e;
 	margin-top: 0;
 	padding: 125px 0 125px 0;
 	justify-content: right;
@@ -380,7 +380,7 @@
   }
 
   .skill {
-	background-color: #1b0135;
+	background-color: #0f011e;
   }
 
   .list {
@@ -438,7 +438,7 @@
 }
 
   .awards {
-	background-color: #1b0135;
+	background-color: #0f011e;
   }
 
   .awards h1 {
@@ -481,7 +481,7 @@
   }
 
   .awards .description {
-	background-color: #1b0135;
+	background-color: #0f011e;
 	margin: 40px 20px 20px 20px;
 	overflow: hidden;
 	display: flex;
@@ -537,7 +537,7 @@
   }
 
   .education {
-	background-color: #1b0135;
+	background-color: #0f011e;
 	margin-top: 40px;
 	padding: 125px 0 75px 0;
   }
@@ -624,7 +624,7 @@
 }
 
 .work {
-	background-color: #1b0135;
+	background-color: #0f011e;
 }
 
 .work h1 {
@@ -655,7 +655,7 @@
 }
 
 .volunteer {
-	background-color: #1b0135;
+	background-color: #0f011e;
 	padding: 75px 0 100px;
 }
 
@@ -696,7 +696,7 @@
 }
 
 .volunteer .description {
-	background-color: #1b0135;
+	background-color: #0f011e;
 	margin: 50px 20px 20px 20px;
 	overflow: hidden;
 	display: flex;
@@ -847,9 +847,9 @@
   }
 
   .projects {
-	margin-top: 30px;
-	padding: 40px 0 40px 0;
-	background-color: #1b0135;
+	margin-top: 100px;
+	padding: 80px 0 40px 0;
+	background-color: #0f011e;
   }
 
   .projects .introduction {
@@ -981,5 +981,85 @@
 .projects .project button:hover {
 	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 	transform: translate(0, -10%)
+}
+
+.footer {
+	background-color: #1b0135;
+	color: white;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .fav-song {
+	background-color:#0f011e;
+	padding: 20px;
+	color: hsla(238, 100%, 75%, 0.75);
+	font-family: Poppins;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 1rem;
+	width: 20%;
+	min-width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+}
+
+@keyframes revealText {
+    0% {
+        transform: translateX(0);
+    }
+	30% {
+        transform: translateX(0);
+    }
+    70% {
+        transform: translateX(var(--end, -50%));
+    }
+	100% {
+        transform: translateX(var(--end, -50%));
+    }
+}
+
+.footer .fav-song p {
+	font-family: Urbanist, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.footer .fav-song .animate-text {
+	animation: revealText 10s linear infinite;
+}
+
+.footer .fav-song .song {
+    flex-grow: 1; 
+    min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.footer .fav-song .spotify-logo {
+	margin-right: 15px;
+}
+
+.footer p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 15px;
+	color: #8084ff;
+	opacity: 0.75;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover p {
+	opacity: 1;	
+}
+.footer a:active p {
+	color: #a08bfd;
 }
   

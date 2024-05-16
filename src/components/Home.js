@@ -2,6 +2,7 @@ import React from 'react'
 import { NavBar } from "./NavBar";
 import { Banner } from "./Banner";
 import { About } from "./About"
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
 		<NavBar />
 		<Banner />
 		<About />
+		<Footer />
 	</div>
   )
 }

@@ -1,9 +1,61 @@
-import React from 'react'
+import { useState, useEffect, useRef, React} from 'react'
+import { Copyright } from '@mui/icons-material'
+import { Spotify } from 'react-bootstrap-icons'
 
 const Footer = () => {
-  return (
-	<div className='footer'>Footer</div>
-  )
+	const [animate, setAnimate] = useState(false);
+	
+	useEffect(() => {
+		let songName = document.getElementById('song-name');
+		let differenceWidth = songName.clientWidth - songName.scrollWidth - 10;
+		songName.style.setProperty('--end', `${differenceWidth}px`);
+	
+		window.addEventListener("resize", function() {
+			differenceWidth = songName.clientWidth - songName.scrollWidth - 10;
+			songName.style.setProperty('--end', `${differenceWidth}px`);
+		});
+
+	}, [])
+
+	useEffect(() => {
+		let songName = document.getElementById("song-name");
+
+		function checkOverflow(element) {
+			return element.clientWidth < element.scrollWidth;
+		}
+
+		function addAnimation() {
+			let footer = document.getElementById("footer");
+			let footerRect = footer.getBoundingClientRect();
+			let windowHeight = window.innerHeight || document.documentElement.clientHeight;
+			let isVisible = footerRect.top < windowHeight && footerRect.bottom >= 0;
+
+			if (isVisible && checkOverflow(songName)) {
+				setAnimate(true);
+			} else {
+				setAnimate(false);
+			}
+		}
+		
+		window.addEventListener("scroll", addAnimation());
+	}, [])
+
+	return (
+		<div className='footer' id='footer'>
+			<div className='copyright'>
+				<p><Copyright size={10}/> Yiyan Huang 2024</p>
+			</div>
+			<div className='fav-song'>
+				<div className='spotify-logo'>
+					<Spotify size={30}/>
+				</div>
+				<div className='song'>
+					<p>Song on repeat:</p>
+					<a href="https://open.spotify.com/track/6dODwocEuGzHAavXqTbwHv" target="blank"><strong><p className={`${animate ? 'animate-text' : ''}`} id="song-name">Fortnight (feat. Post Malone) by Taylor Swift</p></strong></a>
+					</div>
+			</div>
+		</div>
+	)
 }
 
 export default Footer

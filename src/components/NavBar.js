@@ -47,9 +47,9 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.instagram.com/yiyanhh" className="social-buttons"><img src={Insta}/></a>
-                            <a href="https://github.com/yiyan023" className="social-buttons"><img src={GitHub}/></a>
-                            <a href="https://www.linkedin.com/in/yiyanhh23/" className="social-buttons"><img src={LinkedIn}/></a>
+                            <a href="https://www.instagram.com/yiyanhh" className="social-buttons" target="blank"><img src={Insta}/></a>
+                            <a href="https://github.com/yiyan023" className="social-buttons" target="blank"><img src={GitHub}/></a>
+                            <a href="https://www.linkedin.com/in/yiyanhh23/" className="social-buttons" target="blank"><img src={LinkedIn}/></a>
                         </div>
                     </span>
                 </Navbar.Collapse>

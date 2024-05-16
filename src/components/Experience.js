@@ -4,6 +4,7 @@ import { NavBar } from "./NavBar";
 import Work from './Work';
 import Education from './Education'
 import Volunteer from './Volunteer';
+import Footer from './Footer';
 
 const Experience = () => {
   return (
@@ -12,6 +13,7 @@ const Experience = () => {
 		<Education />
 		<Work />
 		<Volunteer />
+		<Footer />
 	</div>
   )
 }
