@@ -46,7 +46,7 @@ const ForgetMeNot = () => {
 						<h3>Full Stack Mobile Application | Jan 2024</h3>
 						<hr  />
 						<p>Relive your favourite memories in augmented reality</p>
-						<button onClick={() => window.location.href = "hhttps://github.com/yiyan023/Forget-Me-Not"}>
+						<button onClick={() => window.open("https://github.com/yiyan023/Forget-Me-Not")}>
 							GitHub 
 							<Github className="social-icons" size={18}/>
 						</button>

@@ -44,11 +44,11 @@ const TravelBuddy = () => {
 						<h3>Full Stack Mobile Application | Feb 2024</h3>
 						<hr />
 						<p>Aims to make travel more convenient for everyone</p>
-						<button onClick={() => window.location.href = "https://github.com/yiyan023/Travel-Buddy"}>
+						<button onClick={() => window.open("https://github.com/yiyan023/Travel-Buddy")}>
 							GitHub 
 							<Github className="social-icons" size={18}/>
 						</button>
-						<button onClick={() => window.location.href = "https://drive.google.com/file/d/1gxdy7aW8iaw1YLzCLXtEkoi8r8feSEY0/view?usp=sharing"}>
+						<button onClick={() => window.open("https://drive.google.com/file/d/1gxdy7aW8iaw1YLzCLXtEkoi8r8feSEY0/view?usp=sharing")}>
 							Demo
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>

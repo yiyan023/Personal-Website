@@ -44,7 +44,7 @@ const DeafLink = () => {
 						<h3>Machine Learning Model | Nov 2023</h3>
 						<hr />
 						<p>Aims to bridge global communication barriers in the deafmute community</p>
-						<button onClick={() => window.location.href = "https://github.com/yiyan023/DeafLink"}>
+						<button onClick={() => window.open("https://github.com/yiyan023/DeafLink")}>
 							GitHub 
 							<Github className="social-icons" size={18}/>
 						</button>

@@ -23,8 +23,8 @@ const Footer = () => {
 		function checkOverflow(element) {
 			return element.clientWidth < element.scrollWidth;
 		}
-
-		function addAnimation() {
+		
+		window.addEventListener("scroll", function(event) {
 			let footer = document.getElementById("footer");
 			let footerRect = footer.getBoundingClientRect();
 			let windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -35,9 +35,7 @@ const Footer = () => {
 			} else {
 				setAnimate(false);
 			}
-		}
-		
-		window.addEventListener("scroll", addAnimation());
+		});
 	}, [])
 
 	return (

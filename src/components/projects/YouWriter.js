@@ -49,11 +49,11 @@ const YouWriter = () => {
 						<h3>Full Stack Web Application | Jan 2024</h3>
 						<hr />
 						<p>Aims to increase note-taking efficiency for students of all demographics</p>
-						<button onClick={() => window.location.href = "https://github.com/yiyan023/YouWriter"}>
+						<button onClick={() => window.open("https://github.com/yiyan023/YouWriter")}>
 							GitHub 
 							<Github className="social-icons" size={18}/>
 						</button>
-						<button onClick={() => window.location.href = "https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing"}>
+						<button onClick={() => window.open("https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing")}>
 							Demo
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>

@@ -46,7 +46,7 @@ const IngredientSafe = () => {
 						<h3>Full Stack Web Application | Dec 2022</h3>
 						<hr />
 						<p>Aims to help the visually impaired avoid allergic reactions</p>
-						<button onClick={() => window.location.href = "https://github.com/yiyan023/IngredientSafe"}>
+						<button onClick={() => window.open("https://github.com/yiyan023/IngredientSafe")}>
 							GitHub 
 							<Github className="social-icons" size={18}/>
 						</button>
