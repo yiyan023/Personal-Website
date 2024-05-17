@@ -106,10 +106,33 @@
 	font-family: Poppins;
   }
 
+  @media(min-width: 1200px) {
+	.banner .next {
+		top: 37%;
+	}
+  }
+
+  @media(min-width: 993px) {
+	.banner .next {
+		top: 37%;
+	}
+  }
+
+  @media(max-width: 992px) {
+	.banner .next {
+		top: 35%;
+	}
+  }
+
+  @media(max-width: 768px) {
+	.banner .next {
+		top: 30%;
+	}
+  }
+
   .banner .next {
 	position: absolute;
     left: 50%; 
-	top: 37%;
     transform: translateX(-50%);
     display: flex; 
     justify-content: center;
