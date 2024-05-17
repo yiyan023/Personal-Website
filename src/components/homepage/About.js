@@ -17,11 +17,11 @@ export const About = () => {
 	return (
 		<section className="about" id="home">
 			<Container>
-				<Row className="align-items-center p-5">
-						<Col className="portrait d-flex justify-content-center align-items-center mb-5" xs={12} md={6} xl={6}>
+				<Row className="align-items-center p-5 d-flex justify-content-center">
+						<Col className="portrait d-flex justify-content-center align-items-center mb-5" xs={12} md={8} xl={6}>
 							<img data-aos="fade-in" data-aos-delay="500" src={Portrait}/>
 						</Col>
-					<Col className="text-center text-md-start justify-content-center" xs={12} md={6} xl={6}>
+					<Col className="text-center text-xl-start d-flex flex-column justify-content-center align-items-center align-items-xl-start" xs={12} md={8} xl={6}>
 						<h1 data-aos="fade-in" data-aos-delay="500">{`About Me`}</h1>
 						<p className="introduction" data-aos="fade-in" data-aos-delay="1250">Hi, I'm Yiyan, an aspiring full-stack developer and incoming sophomore at the University of Waterloo. As a keen learner who loves solving problems, I am always seeking opportunities to expand my technical skills and build something awesome!</p>
 						<a data-aos="fade-in" data-aos-delay="2000" href="mailto:y84huang@uwaterloo.ca" target="blank">   <Envelope />: y84huang@uwaterloo.ca</a>

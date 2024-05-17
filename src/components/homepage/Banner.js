@@ -46,9 +46,9 @@ export const Banner = () => {
 
     let scrollDistance;
 
-    if (screenWidth < 576) {
+    if (screenWidth <= 576) {
         scrollDistance = 850; 
-    } else if (screenWidth >= 576 && screenWidth < 992) {
+    } else if (screenWidth > 576 && screenWidth < 992) {
         scrollDistance = 780;
     } else if (screenWidth >= 992) {
         scrollDistance = 745;
