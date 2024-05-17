@@ -6,7 +6,9 @@ nav.navbar {
 	top: 0;
 	z-index: 9999;
 	transition:  0.32s ease-in-out;
-	background-color: rgb(27, 1, 53)
+	background-color: rgb(27, 1, 53);
+	display: flex;
+	justify-content: space-between;
   }
   nav.navbar.scrolled {
 	padding: 0px 0;
@@ -14,6 +16,8 @@ nav.navbar {
   }
   nav.navbar a.navbar-brand {
 	  width: 9%;
+	  padding: 20px;
+	  position: fixed;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
 	font-weight: 400;
@@ -22,19 +26,21 @@ nav.navbar {
 	padding: 0 25px;
 	font-size: 18px;
 	opacity: 0.75;
+	text-align: center;
   }
+  
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 	  opacity: 1;
   }
-  span.navbar-text {
-	  display: flex;
-	  align-items: center;
-  }
+
   .social-icon {
 	  display: inline-block;
-	  margin-left: 50px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: end;
   }
+
   .social-icon a {
 	  width: 35px;
 	  height: 35px;
@@ -45,7 +51,8 @@ nav.navbar {
 	  justify-content: center;
 	  line-height: 1;
 	  border: 1px solid rgb(128, 132, 255);
-	  margin-right: 15px;
+	  margin-right: 8px;
+	  margin-left: 8px;
   }
 
   .social-icon a::before {
@@ -85,6 +92,11 @@ nav.navbar {
   .navbar-text button span {
 	z-index: 1;
   }
+
+  .narvar-brand {
+	margin-right: 10px;
+  }
+
   .navbar-text button::before {
 	content: "";
 	width: 0%;
@@ -114,26 +126,76 @@ nav.navbar {
 	width: 24px;
 	height: 17px;
 	background-image: none;
-	position: relative;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #8084ff;
 	transition: all 300ms linear;
-	top: -2px;
+	position: fixed;
+	right: 60px;
   }
+
+  nav.navbar .navbar-toggler-icon.toggled,
+  nav.navbar .navbar-toggler-icon.toggled:after,
+  nav.navbar .navbar-toggler-icon.toggled:before  {
+	border-bottom: 2px solid white;
+  }
+
+  nav.navbar .navbar-toggler-icon:hover {
+	border-bottom: 2px solid white;
+  }
+
+  nav.navbar .navbar-toggler-icon:active {
+	border-bottom: 2px solid white;
+  }
+
+  nav.navbar .navbar-toggler-icon:hover:after,
+  nav.navbar .navbar-toggler-icon:hover:before {
+	background-color: white;
+  }
+
   nav.navbar .navbar-toggler-icon:focus {
-	  border-bottom: 2px solid #fff;
+	  border-bottom: 2px solid #8084ff;
   }
   nav.navbar .navbar-toggler-icon:after,
   nav.navbar .navbar-toggler-icon:before {
 	  width: 24px;
 	  position: absolute;
 	  height: 2px;
-	  background-color: #fff;
+	  background-color: #8084ff;
 	  top: 0;
 	  left: 0;
 	  content: '';
 	  z-index: 2;
 	  transition: all 300ms linear;
   }
+
+  @media (max-width: 992px) {
+	nav.navbar .navbar-collapse {
+		text-align: center;
+		background-color: rgb(27, 1, 53);
+		position: absolute;
+		right: 0;
+		top: 50px;
+	}
+
+	nav.navbar .navbar-nav .nav-link.navbar-link {
+		text-align: right;
+		margin-bottom: 5px;
+	}
+
+	.social-icon {
+		padding: 0 20px 20px 20px;
+	}
+  }
+
+  .toggle {
+	display: flex;
+	position: fixed;
+	right: 50px;
+  }
+
+  .nav.navbar .navbar-nav {
+	text-align: center;
+  }
+
   nav.navbar .navbar-toggler-icon:after {
 	  top: 8px;
   }
@@ -149,4 +211,9 @@ nav.navbar {
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	  border-color: transparent;
+	  background-color: #fff;
+  }
+
+  .navbar-text {
+	margin-left: 15px;
   }
