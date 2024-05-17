@@ -1,0 +1,44 @@
+.work {
+	background-color: #0f011e;
+	margin-top: 75px;
+	padding-top:100px;
+}
+
+.work h1 {
+	color: #a08bfd;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.work a {
+	text-decoration: none;
+}
+
+.work a:hover h3 {
+	color:#9482e2
+}
+
+.work a:active h3 {
+	color: rgb(109, 77, 253)
+}
+
+.work .vertical-timeline-element-content {
+	border-top: 4px solid #5339c4;
+}
+
+.work .vertical-timeline-element-date {
+	color: #fff
+}
+
+.work h3 {
+	font-family: Roboto;
+	color: #5339c4;
+}
+
+.work h4 {
+	font-size: 20px;
+}
+
+.work p {
+	font-family: Poppins;
+}

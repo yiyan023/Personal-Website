@@ -1,7 +1,7 @@
 import { React, useEffect} from 'react'
 import { NavBar } from "./NavBar";
-import { List } from './List';
-import Awards from './Awards';
+import { List } from './skills/List';
+import Awards from './skills/Awards';
 import Footer from './Footer';
 
 const Skills = () => {

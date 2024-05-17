@@ -1,0 +1,53 @@
+  .list {
+	margin-top: 40px;
+	padding: 125px 0 125px 0;
+	justify-content: right;
+  }
+
+  .list h1 {
+	color: rgb(160, 139, 253);
+  }
+
+  .list .name {
+	text-align: center;
+	margin-bottom: 50px;
+  }
+
+  .list img {
+	height: 4.5em; 
+	width: auto;
+	max-width: 100%;
+	margin-bottom: 15px;
+  }
+  
+  .list p {
+	font-family: Roboto;
+	font-size: 20px;
+	margin-bottom: 0;
+  }
+  
+  .list .skill {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 35px 0 35px 0;
+	margin: 0.5rem; 
+	border-radius: 0.5rem;
+	border: 2px solid;
+	border-color: transparent;
+	transition: transform 0.3s ease;
+}
+
+.list .skill:hover {
+	border-color: #fff;
+	box-shadow: 5px 5px 6px rgb(190, 176, 255, 0.3);
+	transform: translate(0, -10%)
+} 
+
+.list .col-space {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

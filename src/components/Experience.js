@@ -1,16 +1,14 @@
 import React from 'react'
 
 import { NavBar } from "./NavBar";
-import Work from './Work';
-import Education from './Education'
-import Volunteer from './Volunteer';
+import Work from './experiences/Work';
+import Volunteer from './experiences/Volunteer';
 import Footer from './Footer';
 
 const Experience = () => {
   return (
 	<div>
 		<NavBar />
-		<Education />
 		<Work />
 		<Volunteer />
 		<Footer />

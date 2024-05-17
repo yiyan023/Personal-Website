@@ -1,12 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { React, useEffect } from 'react'
+import '../../styling/skills/award.css'
 
-import Waterloo from '../assets/waterloo.png'
-import MVP from '../assets/mvp.png'
-import IMPACT from '../assets/impact.jpg'
-import OWG from '../assets/owg.png'
-import LunarHacks from '../assets/lunarhacks.png'
-import ODBA from '../assets/odba.png'
+import Waterloo from '../../assets/waterloo.png'
+import MVP from '../../assets/mvp.png'
+import IMPACT from '../../assets/impact.jpg'
+import OWG from '../../assets/owg.png'
+import LunarHacks from '../../assets/lunarhacks.png'
+import ODBA from '../../assets/odba.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos';
@@ -25,7 +26,7 @@ const Awards = () => {
 			<div data-aos="fade-in" data-aos-delay="300" className='intro-paragraph'><p>Here are some of the awards I have won that show my accomplishments and interests!</p></div>
 			<Container className='awards-grid'>
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
-					<Col className="award" xs={10} md={10} xl={5} >
+					<Col className="award" xs={10} md={8} xl={5} >
 						<div className='image-container'><img src={Waterloo}/></div>
 						<div className='image-overlap'>
 							<p className="explain">A $2000 scholarship awarded by the University of Waterloo to recognize admitted students with a 95%+ admissions average.</p>
@@ -35,7 +36,7 @@ const Awards = () => {
 							<p>Sept 2023 - University of Waterloo</p>
 						</div>
 					</Col>
-					<Col className="award" xs={10} md={10} xl={5} data-aos="fade-up">
+					<Col className="award" xs={10} md={8} xl={5} data-aos="fade-up">
 						<div className='image-container'>
 							<img src={MVP}/>
 						</div>
@@ -49,7 +50,7 @@ const Awards = () => {
 					</Col>
 				</Row >
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
-					<Col className="award" xs={10} md={10} xl={5}>
+					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
 							<img src={IMPACT}/>
 						</div>
@@ -61,7 +62,7 @@ const Awards = () => {
 							<p>March 2023 - FIRST Robotics</p>
 						</div>
 					</Col>
-					<Col className="award" xs={10} md={10} xl={5}>
+					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
 							<img src={OWG}/>
 						</div>
@@ -75,7 +76,7 @@ const Awards = () => {
 					</Col>
 				</Row>
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
-					<Col className="award" xs={10} md={10} xl={5}>
+					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
 							<img src={LunarHacks}/>
 						</div>
@@ -87,7 +88,7 @@ const Awards = () => {
 							<p>Dec 2022 - LunarHacks II</p>
 						</div>
 					</Col>
-					<Col className="award" xs={10} md={10} xl={5}>
+					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
 							<img src={ODBA}/>
 						</div>

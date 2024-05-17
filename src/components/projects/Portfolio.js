@@ -1,12 +1,13 @@
 import { React, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import '../../styling/project.css'
 
-import YouWriter from './projects/YouWriter'
-import DeafLink from './projects/DeafLink'
-import TravelBuddy from './projects/TravelBuddy'
-import ForgetMeNot from './projects/ForgetMeNot'
-import IngredientSafe from './projects/IngredientSafe'
+import YouWriter from './YouWriter'
+import DeafLink from './DeafLink'
+import TravelBuddy from './TravelBuddy'
+import ForgetMeNot from './ForgetMeNot'
+import IngredientSafe from './IngredientSafe'
 
 const Portfolio = () => {
 	useEffect(() => {

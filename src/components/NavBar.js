@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useNavigate  } from "react-router-dom";
+import '../styling/nav.css'
 
 import logo from '../assets/yh.png';
 import Insta from '../assets/instagram.png';

@@ -1,8 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowDownCircleFill, ArrowDownLeft, ArrowDownShort, ArrowDownUp, ArrowRightCircle, ArrowRightShort, BoxArrowDown, Envelope, Linkedin } from "react-bootstrap-icons";
-import { useState, useEffect } from "react";
+import { Envelope, Linkedin } from "react-bootstrap-icons";
+import { useEffect } from "react";
+import '../../styling/homepage/about.css'
 
-import Portrait from '../assets/portrait.png';
+import Portrait from '../../assets/portrait.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

@@ -1,0 +1,43 @@
+.about {
+	background-color: #0f011e;
+	margin-top: 0;
+	padding: 125px 0 125px 0;
+	justify-content: right;
+  }
+
+  .about h1 {
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: block;
+	color: rgb(190, 176, 255);
+  }
+
+  .about .portrait {
+	align-items: center;
+  }
+
+  .about .introduction {
+	font-size: 20px;
+	font-family: Poppins;
+	max-width: 500px;
+	color: rgb(255, 255, 255);
+  }
+
+  .about a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-decoration: none; 
+	margin-bottom: 10px;
+	font-size: 18px;
+  }
+
+  .about a:hover {
+	color: rgb(190, 176, 255);
+  }
+
+  .about a:active {
+	color: #a08bfd;
+  }

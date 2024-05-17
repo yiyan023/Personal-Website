@@ -1,6 +1,7 @@
 import { React, useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
+import '../../styling/experiences/work.css'
 
 import CodeIcon from '@mui/icons-material/Code';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
@@ -29,8 +30,8 @@ const Work = () => {
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
-					<h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3>
-					<h4 className="vertical-timeline-element-subtitle">Boston, Massachusetts</h4>
+					<a href="https://www.neweicgroup.com/" target="blank"><h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3></a>
+					<h4 className="vertical-timeline-element-subtitle">Boston, MA</h4>
 					<p>
 					Incoming part-time intern during Fall 2024
 					</p>
@@ -43,7 +44,7 @@ const Work = () => {
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
-					<h3 className="vertical-timeline-element-title">Software Developer | Rich Media</h3>
+					<a href="https://www.richmedia.com/" target='blank'><h3 className="vertical-timeline-element-title">Software Developer | Rich Media</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
 					<p>
 					Incoming full-time intern during Summer 2024.
@@ -57,7 +58,7 @@ const Work = () => {
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<PrecisionManufacturingIcon />}
 				>
-					<h3 className="vertical-timeline-element-title">Software Developer | FIRST Robotics</h3>
+					<a href="https://www.team2706.ca/" target='blank'><h3 className="vertical-timeline-element-title">Software Developer | FIRST Robotics</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Ottawa, ON</h4>
 					<p>
 					<ul>
@@ -75,7 +76,7 @@ const Work = () => {
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<School />}
 				>
-					<h3 className="vertical-timeline-element-title">Software Mentor | CoderSports</h3>
+					<a href="https://codersports.com/" target='blank'><h3 className="vertical-timeline-element-title">Software Mentor | CoderSports</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Ottawa, ON</h4>
 					<p>
 						<ul>

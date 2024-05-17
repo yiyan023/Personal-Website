@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavBar } from "./NavBar";
-import Portfolio from './Portfolio';
+import Portfolio from './projects/Portfolio';
 import Footer from './Footer';
 
 const Projects = () => {

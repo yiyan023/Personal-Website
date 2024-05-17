@@ -1,0 +1,80 @@
+.footer {
+	background-color: #1b0135;
+	color: white;
+	padding: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .fav-song {
+	background-color:#0f011e;
+	padding: 20px;
+	color: hsla(238, 100%, 75%, 0.75);
+	font-family: Poppins;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 1rem;
+	width: 20%;
+	min-width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+}
+
+@keyframes revealText {
+    0% {
+        transform: translateX(0);
+    }
+	30% {
+        transform: translateX(0);
+    }
+    70% {
+        transform: translateX(var(--end, -50%));
+    }
+	100% {
+        transform: translateX(var(--end, -50%));
+    }
+}
+
+.footer .fav-song p {
+	font-family: Urbanist, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.footer .fav-song .animate-text {
+	animation: revealText 10s linear infinite;
+}
+
+.footer .fav-song .song {
+    flex-grow: 1; 
+    min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.footer .fav-song .spotify-logo {
+	margin-right: 15px;
+}
+
+.footer p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 15px;
+	color: #8084ff;
+	opacity: 0.75;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover p {
+	opacity: 1;	
+}
+.footer a:active p {
+	color: #a08bfd;
+}
+  

@@ -1,9 +1,7 @@
 import { React, useState, useRef, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { CalendarCheck, TriangleFill } from 'react-bootstrap-icons'
-
-import Uw from '../assets/uw.png'
-import Mhs from '../assets/mhs.png'
+import '../../styling/experiences/education.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos'

@@ -1,0 +1,86 @@
+.education {
+	background-color: #0f011e;
+	margin-top: 40px;
+	padding: 125px 0 75px 0;
+  }
+
+  .education h1 {
+	color: #a08bfd;
+	text-align: center;
+	margin-bottom: 60px;
+  }
+
+  .education .h2 {
+	font-family: Roboto;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+  }
+
+  .education .h2:hover {
+	color: #e2dcff;
+  }
+
+  .education .h2:active {
+	color: #bdb0fa;
+  }
+
+  .education h3 {
+	font-size: 15px;
+	font-style: italic;
+	font-family: Poppins;
+  }
+
+  .education p {
+	font-family: Poppins;
+  }
+
+  .education img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+  }
+
+  .education h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+
+  .education li {
+	font-family: Poppins;
+	margin-bottom: 5px;
+  }
+
+  .education .education-one {
+	margin: 20px;
+	justify-content: center;
+	display: flex;
+  }
+
+  .education .education-two {
+	margin: 15px;
+	justify-content: center;
+	display: flex;
+  }
+
+  .education .school-info {
+	position: relative;
+  }
+
+  .education .uw-dropdown-content {
+	display: block;
+	position: absolute;
+	bottom: 0%;
+	background-color: #0f011e;
+  }
+
+  .education .mhs-dropdown-content {
+	display: block;
+	position: absolute;
+	bottom: 0%;
+	background-color: #0f011e;
+  }
+
+  .education .triangle-fill {
+    transition: transform 0.5s ease;
+}

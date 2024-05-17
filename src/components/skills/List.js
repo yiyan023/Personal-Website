@@ -1,16 +1,17 @@
 import { React, useEffect } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
+import '../../styling/skills/skill.css'
 
-import Python from '../assets/python.png'
-import JavaScript from '../assets/javascript.png'
-import C from '../assets/c.png'
-import ReactJS from '../assets/react.png'
-import Flask from '../assets/flask.png'
-import Tailwind from '../assets/tailwind.png'
-import MongoDB from '../assets/mongodb.png'
-import Git from '../assets/git.png'
-import Bootstrap from '../assets/bootstrap.png'
-import Flutter from '../assets/flutter.png'
+import Python from '../../assets/python.png'
+import JavaScript from '../../assets/javascript.png'
+import C from '../../assets/c.png'
+import ReactJS from '../../assets/react.png'
+import Flask from '../../assets/flask.png'
+import Tailwind from '../../assets/tailwind.png'
+import MongoDB from '../../assets/mongodb.png'
+import Git from '../../assets/git.png'
+import Bootstrap from '../../assets/bootstrap.png'
+import Flutter from '../../assets/flutter.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos'
