@@ -1,5 +1,6 @@
 import { React, useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import { CalendarCheck } from 'react-bootstrap-icons';
 import 'react-vertical-timeline-component/style.min.css';
 import '../../styling/experiences/work.css'
 
@@ -26,7 +27,7 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date="Sept 2024 - present"
+					date={<><CalendarCheck /> Sept 2024 - present</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
@@ -40,7 +41,7 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date="May 2024 - present"
+					date={<><CalendarCheck /> May 2024 - present</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
@@ -54,7 +55,7 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date="Sept 2019 - Aug 2023"
+					date={<><CalendarCheck /> Sept 2019 - August 2023</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<PrecisionManufacturingIcon />}
 				>
@@ -72,7 +73,7 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date="Jun 2021- Aug 2021"
+					date={<><CalendarCheck />Jun 2021 - Aug 2021</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<School />}
 				>

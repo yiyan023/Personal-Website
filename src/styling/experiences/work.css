@@ -26,8 +26,16 @@
 	border-top: 4px solid #5339c4;
 }
 
-.work .vertical-timeline-element-date {
-	color: #fff
+@media (max-width: 1169px) {
+	.work .vertical-timeline-element-date {
+		color: #0f011e
+	}
+}
+
+@media (min-width: 1170px) {
+	.work .vertical-timeline-element-date {
+		color: #fff
+	}
 }
 
 .work h3 {

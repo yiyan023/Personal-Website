@@ -45,7 +45,7 @@ const Awards = () => {
 						</div>
 						<div className='description'>
 							<h2>Senior Badminton MVP</h2>
-							<p>June 2022, June 2023 - Merivale High School</p>
+							<p>June 2023 - Merivale High School</p>
 						</div>
 					</Col>
 				</Row >

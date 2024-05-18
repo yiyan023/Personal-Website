@@ -3,9 +3,30 @@
 	color: white;
 	padding: 40px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+}
+
+@media (max-width: 576px) {
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer .copyright {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 577px) {
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer .copyright {
+		margin-bottom: 0;
+	}
 }
 
 .footer .fav-song {
