@@ -8,6 +8,7 @@ import logo from '../assets/yh.png';
 import Insta from '../assets/instagram.png';
 import GitHub from '../assets/github.png';
 import LinkedIn from '../assets/linkedin.png'
+import Gmail from '../assets/email.png'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -68,6 +69,7 @@ export const NavBar = () => {
 								<a href="https://www.instagram.com/yiyanhh" className="social-buttons" target="blank"><img src={Insta}/></a>
 								<a href="https://github.com/yiyan023" className="social-buttons" target="blank"><img src={GitHub}/></a>
 								<a href="https://www.linkedin.com/in/yiyanhh23/" className="social-buttons" target="blank"><img src={LinkedIn}/></a>
+								<a href="mailto:y84huang@uwaterloo.ca" className="social-buttons" target="blank"><img src={Gmail}/></a>
 							</div>
 						</span>
 					</Navbar.Collapse>

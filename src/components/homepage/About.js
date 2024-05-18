@@ -24,8 +24,6 @@ export const About = () => {
 					<Col className="text-center text-xl-start d-flex flex-column justify-content-center align-items-center align-items-xl-start" xs={12} md={8} xl={6}>
 						<h1 data-aos="fade-in" data-aos-delay="500">{`About Me`}</h1>
 						<p className="introduction" data-aos="fade-in" data-aos-delay="1250">Hi, I'm Yiyan, an aspiring full-stack developer and incoming sophomore at the University of Waterloo. As a keen learner who loves solving problems, I am always seeking opportunities to expand my technical skills and build something awesome!</p>
-						<a data-aos="fade-in" data-aos-delay="2000" href="mailto:y84huang@uwaterloo.ca" target="blank">   <Envelope />: y84huang@uwaterloo.ca</a>
-						<a data-aos="fade-in" data-aos-delay="2000" href="https://www.linkedin.com/in/yiyanhh23/" target="blank">   <Linkedin />: yiyanhh23</a>
 					</Col>
 				</Row>
 			</Container>
