@@ -4,41 +4,42 @@ import { useState, useEffect } from "react";
 import '../../styling/homepage/banner.css'
 
 export const Banner = () => {
-	const toRotate = ["Software Engineer,", "Full Stack Developer,", "Web Developer,", "Backend Developer,", ]
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [delta, setDelta] = useState(125 - Math.random() * 100);
 	const [text, setText] = useState('');
 	const period = 100;
-
-	const tick = () => {
-		let i = loopNum % toRotate.length;
-		let fullText = toRotate[i];
-		let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-		
-		setText(updatedText);
-
-		if (isDeleting) {
-			setDelta(prevDelta => prevDelta /2)
-		}
-
-		if (!isDeleting && updatedText === fullText) {
-			setIsDeleting(true);
-			setDelta(period);
-		} else if (isDeleting && updatedText === "") {
-			setIsDeleting(false);
-			setLoopNum(loopNum + 1);
-			setDelta(period);
-		}
-	}
 	
 	useEffect(() => {
+		const toRotate = ["Software Engineer,", "Full Stack Developer,", "Web Developer,", "Backend Developer,", ]
+
+		const tick = () => {
+			let i = loopNum % toRotate.length;
+			let fullText = toRotate[i];
+			let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+			
+			setText(updatedText);
+	
+			if (isDeleting) {
+				setDelta(prevDelta => prevDelta /2)
+			}
+	
+			if (!isDeleting && updatedText === fullText) {
+				setIsDeleting(true);
+				setDelta(period);
+			} else if (isDeleting && updatedText === "") {
+				setIsDeleting(false);
+				setLoopNum(loopNum + 1);
+				setDelta(period);
+			}
+		}
+
 		let ticker = setInterval(() => {
 			tick();
 		}, delta)
 
 		return () => { clearInterval(ticker)};
-	}, [text, tick, delta])
+	}, [text, delta, isDeleting, loopNum ])
 
 	function scrollDown() {
 
