@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, React} from 'react'
+import { useState, useEffect, React} from 'react'
 import { Copyright } from '@mui/icons-material'
 import { Spotify } from 'react-bootstrap-icons'
 import '../styling/footer.css'

@@ -52,7 +52,7 @@ export const NavBar = () => {
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : "notScrolled"}>
-                <Navbar.Brand href="/"><img src={logo} height="130" width="130" href="#home"/>
+                <Navbar.Brand href="/"><img src={logo} height="130" width="130" href="#home" alt="logo"/>
                 </Navbar.Brand>
                 <div className="toggle">
 					<Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -66,10 +66,10 @@ export const NavBar = () => {
 						</Nav>
 						<span className="navbar-text">
 							<div className="social-icon">
-								<a href="https://www.instagram.com/yiyanhh" className="social-buttons" target="blank"><img src={Insta}/></a>
-								<a href="https://github.com/yiyan023" className="social-buttons" target="blank"><img src={GitHub}/></a>
-								<a href="https://www.linkedin.com/in/yiyanhh23/" className="social-buttons" target="blank"><img src={LinkedIn}/></a>
-								<a href="mailto:y84huang@uwaterloo.ca" className="social-buttons" target="blank"><img src={Gmail}/></a>
+								<a href="https://www.instagram.com/yiyanhh" className="social-buttons" target="blank"><img src={Insta} alt="Instagram"/></a>
+								<a href="https://github.com/yiyan023" className="social-buttons" target="blank"><img src={GitHub} alt="GitHub"/></a>
+								<a href="https://www.linkedin.com/in/yiyanhh23/" className="social-buttons" target="blank"><img src={LinkedIn} alt="LinkedIn"/></a>
+								<a href="mailto:y84huang@uwaterloo.ca" className="social-buttons" target="blank"><img src={Gmail} alt="Gmail"/></a>
 							</div>
 						</span>
 					</Navbar.Collapse>

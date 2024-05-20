@@ -27,7 +27,7 @@ const Awards = () => {
 			<Container className='awards-grid'>
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
 					<Col className="award" xs={10} md={8} xl={5} >
-						<div className='image-container'><img src={Waterloo}/></div>
+						<div className='image-container'><img src={Waterloo} alt="University of Waterloo"/></div>
 						<div className='image-overlap'>
 							<p className="explain">A $2000 scholarship awarded by the University of Waterloo to recognize admitted students with a 95%+ admissions average.</p>
 						</div>

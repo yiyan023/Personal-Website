@@ -21,7 +21,7 @@ const ForgetMeNot = () => {
 				<Row className='align-items-center justify-content-center'>
 					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
 						<div className='image-container'>
-							<img className="project-banner" src={FMNImg} />
+							<img className="project-banner" src={FMNImg}  alt='Forget Me Not'/>
 						</div>
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
