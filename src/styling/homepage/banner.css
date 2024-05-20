@@ -202,3 +202,7 @@
   .banner .next-button:hover {
 	color: #fff;
   }
+
+  .banner .my-introduction {
+	padding: 0px 75px 0 0px;
+  }
