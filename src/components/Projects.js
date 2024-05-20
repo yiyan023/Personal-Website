@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Projects = () => {
   return (
-	<div className='projects-display'>
+	<div className='projects'>
 		<NavBar />
 		<Portfolio />
 		<Footer />

@@ -15,7 +15,7 @@ const Portfolio = () => {
 	}, [])
 
 	return (
-		<div className='projects'>
+		<div className='portfolio'>
 			<h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">Projects</h1>
 			<TravelBuddy />
 			<YouWriter />

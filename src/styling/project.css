@@ -1,31 +1,31 @@
-.projects {
+.portfolio {
 	margin-top: 100px;
 	padding: 80px 0 40px 0;
 	background-color: #0f011e;
   }
 
-  .projects .introduction {
+  .portfolio .introduction {
 	text-align: center;
   }
 
-  .projects h1 {
+  .portfolio h1 {
 	text-align: center;
 	color: #a08bfd;
   }
 
-  .projects h2 {
+  .portfolio h2 {
 	font-family: Roboto;
 	padding-bottom: 5px;
 	margin-top: 10px;
 	font-size: 40px;
   }
 
-  .projects h3 {
+  .portfolio h3 {
 	font-size: 20px;
 	margin-bottom: 20px;
   }
 
-  .projects p {
+  .portfolio p {
 	font-family: Poppins;
 	padding: 5px;
 	margin-top: 1rem;
@@ -69,43 +69,43 @@
 	padding: 30px;
   }
 
-  .projects .project-image .project-banner {
+  .portfolio .project-image .project-banner {
 	transition: transform 0.3s ease; 
 	height: auto;
 	overflow: hidden;
 	display: block;
 }
 
-.projects .project-image:hover .project-banner {
+.portfolio .project-image:hover .project-banner {
 	transform: scale(1.1);
   }
 
-.projects .summary .tech {
+.portfolio .summary .tech {
 	height: 25px;
 	width: auto;
 	margin: 10px;
 	display: none;
 }
 
-.projects .summary:hover .tech {
+.portfolio .summary:hover .tech {
 	display: flex;
 }
 
-.projects .summary .tech-stack {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.projects .project .tech-summary {
+.portfolio .summary .tech-stack {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.projects .project button {
+.portfolio .project .tech-summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.portfolio .project button {
 	padding: 10px;
 	width: 40%;
 	height: fixed;
@@ -120,12 +120,12 @@
 	transition: 0.3s ease-in-out;
 }
 
-.projects .project button .social-icons {
+.portfolio .project button .social-icons {
 	margin-left: 10px;
 	margin-bottom: 3px;
 }
 
-.projects .project button:hover {
+.portfolio .project button:hover {
 	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 	transform: translate(0, -10%)
 }
@@ -136,7 +136,7 @@
 		color: white;
 	  }
 
-	  .projects p {
+	  .portfolio p {
 		font-size: 20px;
 	  }
   }
@@ -147,7 +147,7 @@
 		color: white;
 	  }
 
-	  .projects p {
+	  .portfolio p {
 		font-size: 15px;
 	  }
   }
