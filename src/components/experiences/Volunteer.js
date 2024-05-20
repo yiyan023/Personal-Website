@@ -29,7 +29,7 @@ const Volunteer = () => {
 					</div>
 					<a href="https://www.soong.ca/" target="blank">
 						<div className='image-overlay'>
-							<p className='explain'>Mentored 600+ athletes of all ages and playing levels through error detection and on-court demonstrations during seasonal training sessions and local tournaments.</p>
+							<p className='explain'>Mentored 600+ athletes of all ages and playing levels through error detection and on-court demonstrations.</p>
 						</div>
 					</a>
 					<div className='description'>
@@ -43,7 +43,7 @@ const Volunteer = () => {
 					</div>
 					<a href="https://janetsmusic.com/" target='blank'>
 						<div className='image-overlay'>
-							<p className='explain'>Taught 10+ students of all ages and experience levels by introducing theoretical and practical concepts to develop effective hand positioning, pedal use, and sight reading.</p>
+							<p className='explain'>Taught 10+ students by introducing theoretical and practical concepts to develop effective hand positioning, pedal use, and sight reading.</p>
 						</div>
 					</a>
 					<div className='description'>
@@ -59,7 +59,7 @@ const Volunteer = () => {
 				</div>
 					<a href="https://sirc.ca/events/events-conferences/2023-yonex-canada-para-badminton-intnernational/" target="blank">
 						<div className='image-overlay'>
-							<p className='explain'>Line judged for 100+ para-badminton international athletes by following official BWF ediquette and practicing fair play. </p>
+							<p className='explain'>Line judged for 100+ para-badminton international athletes by following official BWF etiquette and promoting sportsmanship.</p>
 						</div>
 					</a>
 					<div className='description'>
@@ -73,7 +73,7 @@ const Volunteer = () => {
 					</div>
 					<a href="https://photos.app.goo.gl/vkzpzvs3k5aZfCfC8" target="blank">
 						<div className='image-overlay'>
-							<p className='explain'>Coordinated a regional Ottawa tournament hosting 200+ athletes from ages 4-19 under the mentorship of Dominic Soong and Janet Hugli.</p>
+							<p className='explain'>Led the organization of a regional Ottawa tournament hosting 200+ badminton athletes under the mentorship of Dominic Soong and Janet Hugli.</p>
 						</div>
 					</a>
 					<div className='description'>

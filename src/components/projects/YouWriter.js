@@ -29,7 +29,7 @@ const YouWriter = () => {
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
 										<Col xs={5} md={5} xl={5} className='tech-summary'>
-											<p>YouWriter is a full stack application that converts any YouTube video into a written summary.</p>
+											<p>YouWriter is a full-stack web application that converts any YouTube video into a written summary.</p>
 										</Col>
 										<Col xs={5} md={6} xl={5} >
 										</Col>

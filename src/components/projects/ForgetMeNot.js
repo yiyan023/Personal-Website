@@ -27,7 +27,7 @@ const ForgetMeNot = () => {
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
 										<Col xs={5} md={5} xl={5} className='tech-summary'>
-											<p>Forget Me Not is a mobile app that allows users to place handwritten notes on ARKit objects and read them upon revisits.</p>
+											<p>Forget Me Not is a mobile application that enables users to place handwritten notes on AR objects and read them upon visits.</p>
 										</Col>
 										<Col xs={5} md={5} xl={5} >
 										</Col>

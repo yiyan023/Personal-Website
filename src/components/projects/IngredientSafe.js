@@ -27,7 +27,7 @@ const IngredientSafe = () => {
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
 										<Col xs={5} md={5} xl={5} className='tech-summary'>
-											<p>IngredientSafe is a full stack web application that scans food labels and returns potential allergens to the user.</p>
+											<p>IngredientSafe is a full-stack web application that scans food labels and returns potential allergens to the user.</p>
 										</Col>
 										<Col xs={5} md={5} xl={5} >
 										</Col>

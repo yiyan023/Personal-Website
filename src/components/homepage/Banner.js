@@ -68,7 +68,7 @@ export const Banner = () => {
 					<Col xs={12} md={10} xl={7}>
 							<h1 className="name">{`Hi, I'm Yiyan Huang:`}</h1>
 							<div className="fix-height"><h1 className="role">{text}</h1></div>
-							<p className="normal-text">A first-year CS student at the University of Waterloo</p>
+							<p className="normal-text">A second-year CS student at the University of Waterloo</p>
 						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/1aetfS8boNtyLgm5TDWQbJ8Swtr34fNAA/view?usp=sharing')}> View Resume <ArrowRightCircle className="resume" size={25} /> </button>
 						<div className="next">
 							<button className="next-button" onClick={scrollDown}><ArrowDownShort size={50} /> </button>

@@ -41,7 +41,7 @@ const Awards = () => {
 							<img src={MVP}/>
 						</div>
 						<div className='image-overlap'>
-							<p className="explain">The Senior Badminton MVP Award is given to the recipient who performed at the highest level during the competitive season. I won the Mixed Doubles event in the 2021-2022 season and the Girls Doubles event in the 2022-2023, qualifying myself for OFSAA both years.</p>
+							<p className="explain">The Senior Badminton MVP Award is given to the recipient who performed at the highest level during the competitive badminton season. Winning both the Mixed and Girls Doubles categories, I qualified myself for OFSAA in both 2022 and 2023.</p>
 						</div>
 						<div className='description'>
 							<h2>Senior Badminton MVP</h2>
@@ -93,11 +93,11 @@ const Awards = () => {
 							<img src={ODBA}/>
 						</div>
 						<div className='image-overlap'>
-							<p className="explain">Athlete of the Year recognizes the player who has accumulated the most ranking points throughout the competitive season in the singles, doubles, and mixed doubles events combined.</p>
+							<p className="explain">Athlete of the Year recognizes the player who has accumulated the most ranking points throughout the competitive season in the singles, doubles, and mixed doubles events.</p>
 						</div>
 						<div className='description'>
 							<h2>U19 Athlete of the Year </h2>
-							<p>June 2020 - ODBA</p>
+							<p>Jun 2020 - ODBA</p>
 						</div>
 					</Col>
 				</Row>
