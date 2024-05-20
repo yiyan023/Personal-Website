@@ -21,7 +21,7 @@ const IngredientSafe = () => {
 				<Row className='align-items-center justify-content-center'>
 					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
 						<div className='image-container'>
-							<img className="project-banner" src={ISImg} />
+							<img className="project-banner" src={ISImg} alt="IngredientSafe"/>
 						</div>
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
@@ -32,10 +32,10 @@ const IngredientSafe = () => {
 										<Col xs={5} md={5} xl={5} >
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
-											<img className="tech" src={JavaScript} />
-											<img className="tech" src={Python} />
-											<img className="tech" src={Flask} />
-											<img className="tech" src={OpenCV} />
+											<img className="tech" src={JavaScript} alt="JavaScript"/>
+											<img className="tech" src={Python} alt="Python"/>
+											<img className="tech" src={Flask} alt="Flask"/>
+											<img className="tech" src={OpenCV} alt="OpenCV"/>
 										</Col>
 									</Row>
 								</Container>

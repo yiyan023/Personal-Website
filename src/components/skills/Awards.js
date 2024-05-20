@@ -38,7 +38,7 @@ const Awards = () => {
 					</Col>
 					<Col className="award" xs={10} md={8} xl={5} data-aos="fade-up">
 						<div className='image-container'>
-							<img src={MVP}/>
+							<img src={MVP} alt="Senior Badminton MVP Award"/>
 						</div>
 						<div className='image-overlap'>
 							<p className="explain">The Senior Badminton MVP Award is given to the recipient who performed at the highest level during the competitive badminton season. Winning both the Mixed and Girls Doubles categories, I qualified myself for OFSAA in both 2022 and 2023.</p>
@@ -52,7 +52,7 @@ const Awards = () => {
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
 					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
-							<img src={IMPACT}/>
+							<img src={IMPACT} alt="FIRST IMPACT Award"/>
 						</div>
 						<div className='image-overlap'>
 							<p className="explain">The FIRST Impact Award is the most prestigious award at FIRST, it honors the team that best represents a model for other teams to emulate and best embodies the mission of FIRST. My team, 2706 Merge Robotics, received the IMPACT award at the Humber College event during the 2022-2023 season.</p>
@@ -64,7 +64,7 @@ const Awards = () => {
 					</Col>
 					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
-							<img src={OWG}/>
+							<img src={OWG} alt="Ontario Winter Games"/>
 						</div>
 						<div className='image-overlap'>
 							<p className="explain">The Ontario Winter Games is the largest multi-sport event in the province and feature over 3,500 athletes, coaches, managers, and major officials. I competed as a badminton athlete representing Team Ottawa.</p>
@@ -78,7 +78,7 @@ const Awards = () => {
 				<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='align-items-center justify-content-center'>
 					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
-							<img src={LunarHacks}/>
+							<img src={LunarHacks} alt="LunarHacks Best Health Hack"/>
 						</div>
 						<div className='image-overlap'>
 							<p className="explain">A prestigious award given to the team who created the most innovative project that improves physical, mental and social well-being during LunarHacks II.</p>
@@ -90,7 +90,7 @@ const Awards = () => {
 					</Col>
 					<Col className="award" xs={10} md={8} xl={5}>
 						<div className='image-container'>
-							<img src={ODBA}/>
+							<img src={ODBA} alt="U19 Athlete of the Year"/>
 						</div>
 						<div className='image-overlap'>
 							<p className="explain">Athlete of the Year recognizes the player who has accumulated the most ranking points throughout the competitive season in the singles, doubles, and mixed doubles events.</p>

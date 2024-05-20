@@ -20,7 +20,7 @@ const DeafLink = () => {
 				<Row className='align-items-center justify-content-center'>
 					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
 						<div className='image-container'>
-							<img className="project-banner" src={DeafLinkImg} />
+							<img className="project-banner" src={DeafLinkImg} alt="DeafLink"/>
 						</div>
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
@@ -31,9 +31,9 @@ const DeafLink = () => {
 										<Col xs={5} md={5} xl={5} >
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
-											<img className="tech" src={Python} />
-											<img className="tech" src={OpenCV} />
-											<img className="tech" src={ScikitLearn} />
+											<img className="tech" src={Python} alt="Python"/>
+											<img className="tech" src={OpenCV} alt="OpenCV"/>
+											<img className="tech" src={ScikitLearn} alt="Scikit-Learn"/>
 										</Col>
 									</Row>
 								</Container>

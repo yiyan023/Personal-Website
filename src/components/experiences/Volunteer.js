@@ -25,7 +25,7 @@ const Volunteer = () => {
 			<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
 				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
-						<img src={Sba} />
+						<img src={Sba}  alt="Soong Badminton Academy"/>
 					</div>
 					<a href="https://www.soong.ca/" target="blank">
 						<div className='image-overlay'>
@@ -39,7 +39,7 @@ const Volunteer = () => {
 				</Col>
 				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
-						<img src={Piano} />
+						<img src={Piano} alt="Janet's Music School"/>
 					</div>
 					<a href="https://janetsmusic.com/" target='blank'>
 						<div className='image-overlay'>
@@ -55,7 +55,7 @@ const Volunteer = () => {
 			<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
 				<Col className='event' xs={10} md={8} xl={5}>
 				<div className='image-container'>
-					<img src={Para} />
+					<img src={Para} alt="2023 Canada Para-badminton Tournament"/>
 				</div>
 					<a href="https://sirc.ca/events/events-conferences/2023-yonex-canada-para-badminton-intnernational/" target="blank">
 						<div className='image-overlay'>
@@ -69,7 +69,7 @@ const Volunteer = () => {
 				</Col>
 				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
-						<img src={Tournie} />
+						<img src={Tournie} alt="2022 Thanksgiving Tournament"/>
 					</div>
 					<a href="https://photos.app.goo.gl/vkzpzvs3k5aZfCfC8" target="blank">
 						<div className='image-overlay'>

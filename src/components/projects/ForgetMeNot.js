@@ -32,10 +32,10 @@ const ForgetMeNot = () => {
 										<Col xs={5} md={5} xl={5} >
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
-											<img className="tech" src={Flutter} />
-											<img className="tech" src={Flask} />
-											<img className="tech" src={RestAPI} />
-											<img className="tech" src={MongoDB} />
+											<img className="tech" src={Flutter} alt="Flutter"/>
+											<img className="tech" src={Flask} alt="Flask"/>
+											<img className="tech" src={RestAPI} alt="RESTful API"/>
+											<img className="tech" src={MongoDB} alt="MongoDB"/>
 										</Col>
 									</Row>
 								</Container>

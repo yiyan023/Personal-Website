@@ -19,7 +19,7 @@ export const About = () => {
 			<Container>
 				<Row className="align-items-center p-5 d-flex justify-content-center">
 						<Col className="portrait d-flex justify-content-center align-items-center mb-5" xs={12} md={8} xl={6}>
-							<img data-aos="fade-in" data-aos-delay="500" src={Portrait}/>
+							<img data-aos="fade-in" data-aos-delay="500" src={Portrait} alt="Yiyan Huang"/>
 						</Col>
 					<Col className="text-center text-xl-start d-flex flex-column justify-content-center align-items-center align-items-xl-start" xs={12} md={8} xl={6}>
 						<h1 data-aos="fade-in" data-aos-delay="500">{`About Me`}</h1>

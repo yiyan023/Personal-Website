@@ -23,7 +23,7 @@ const YouWriter = () => {
 				<Row className='align-items-center justify-content-center'>
 					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
 						<div className='image-container'>
-							<img className="project-banner" src={YouWriterImg} />
+							<img className="project-banner" src={YouWriterImg} alt="YouWriter"/>
 						</div>
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
@@ -34,11 +34,11 @@ const YouWriter = () => {
 										<Col xs={5} md={6} xl={5} >
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
-										<img className="tech" src={JavaScript} />
-											<img className="tech" src={Python} />
-											<img className="tech" src={ReactJS} />
-											<img className="tech" src={Flask} />
-											<img className="tech" src={MongoDB} />
+										<img className="tech" src={JavaScript} alt="JavaScript"/>
+											<img className="tech" src={Python} alt="Python"/>
+											<img className="tech" src={ReactJS} alt="React" />
+											<img className="tech" src={Flask} alt="Flask"/>
+											<img className="tech" src={MongoDB} alt="MongoDB"/>
 										</Col>
 									</Row>
 								</Container>
