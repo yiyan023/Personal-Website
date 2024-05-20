@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowDownShort, ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import '../../styling/homepage/banner.css'
 
@@ -41,7 +41,7 @@ export const Banner = () => {
 		return () => { clearInterval(ticker)};
 	}, [text, delta, isDeleting, loopNum ])
 
-	function scrollDown() {
+	/* function scrollDown() {
 
 		const screenWidth = window.innerWidth;
 
@@ -59,7 +59,7 @@ export const Banner = () => {
 			top: scrollDistance,
 			behavior: 'smooth' 
 		});
-	}
+	} */
 
 	return (
 		<section className="banner" id="home">
@@ -71,9 +71,9 @@ export const Banner = () => {
 							<div className="fix-height"><h1 className="role">{text}</h1></div>
 							<p className="normal-text">A second-year CS student at the University of Waterloo</p>
 						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/1aetfS8boNtyLgm5TDWQbJ8Swtr34fNAA/view?usp=sharing')}> View Resume <ArrowRightCircle className="resume" size={25} /> </button>
-						<div className="next">
+						{/* <div className="next">
 							<button className="next-button" onClick={scrollDown}><ArrowDownShort size={50} /> </button>
-						</div>
+						</div> */}
 					</Col>
 				</Row>
 				</div>

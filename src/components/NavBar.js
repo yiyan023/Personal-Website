@@ -1,6 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate, useLocation  } from "react-router-dom";
 import $ from 'jquery'
 import '../styling/nav.css'
 
@@ -16,6 +16,7 @@ export const NavBar = () => {
 	const [dropdown, setDropdown] = useState(false);
 
 	const navigate = useNavigate();
+	const location = useLocation();
 
 	useEffect(() => {
 		let $dropdown = $(".navbar-collapse");
@@ -49,6 +50,10 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	  }, [location]);
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : "notScrolled"}>
