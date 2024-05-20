@@ -38,7 +38,7 @@ export const Banner = () => {
 		}, delta)
 
 		return () => { clearInterval(ticker)};
-	}, [text])
+	}, [text, tick, delta])
 
 	function scrollDown() {
 
