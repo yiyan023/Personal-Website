@@ -23,7 +23,7 @@ const Volunteer = () => {
 		<p data-aos="fade-in" data-aos-delay="300" className='intro'>Non-technical experiences that showcase my passions and soft skills</p>
 		<Container className='experiences'>
 			<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
-				<Col className='event' xs={12} md={8} xl={5}>
+				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
 						<img src={Sba} />
 					</div>
@@ -37,7 +37,7 @@ const Volunteer = () => {
 						<p className='describe'>Sept 2019 - Aug 2023 | Soong Badminton Academy</p>
 					</div>
 				</Col>
-				<Col className='event' xs={12} md={8} xl={5}>
+				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
 						<img src={Piano} />
 					</div>
@@ -53,7 +53,7 @@ const Volunteer = () => {
 				</Col>
 			</Row>
 			<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
-				<Col className='event' xs={12} md={8} xl={5}>
+				<Col className='event' xs={10} md={8} xl={5}>
 				<div className='image-container'>
 					<img src={Para} />
 				</div>
@@ -67,7 +67,7 @@ const Volunteer = () => {
 						<p className='describe'>Sept 2022 - Aug 2023 | BWF Para-badminton</p>
 					</div>
 				</Col>
-				<Col className='event' xs={12} md={8} xl={5}>
+				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
 						<img src={Tournie} />
 					</div>

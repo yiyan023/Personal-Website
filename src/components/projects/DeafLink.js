@@ -25,10 +25,10 @@ const DeafLink = () => {
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
-										<Col xs={5} md={4} xl={4} className='tech-summary'>
+										<Col xs={5} md={5} xl={5} className='tech-summary'>
 											<p>Deaf Link is a machine learning model that has been trained with 2600+ images to convert ASL hand signs to English letters in real-time.</p>
 										</Col>
-										<Col xs={5} md={6} xl={6} >
+										<Col xs={5} md={5} xl={5} >
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
 											<img className="tech" src={Python} />

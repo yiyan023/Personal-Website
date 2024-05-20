@@ -24,6 +24,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overscroll-behavior: contain;
   }
   
   html {
@@ -37,6 +38,8 @@
 	position: relative;
 	color: #fff !important;
 	font-family: Averia;
+	background-color:  rgb(27, 1, 53);
+	overscroll-behavior: contain;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -47,4 +50,8 @@
 
   .skill {
 	background-color: #0f011e;
+  }
+
+  .home {
+	background-color: rgb(27, 1, 53);
   }

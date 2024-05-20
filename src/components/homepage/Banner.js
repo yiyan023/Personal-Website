@@ -62,9 +62,9 @@ export const Banner = () => {
 
 	return (
 		<section className="banner" id="home">
-			<Container>
+			<Container className="m-5">
 				<div>
-				<Row className="align-items-center">
+				<Row className="my-introduction align-items-center">
 					<Col xs={12} md={10} xl={7}>
 							<h1 className="name">{`Hi, I'm Yiyan Huang:`}</h1>
 							<div className="fix-height"><h1 className="role">{text}</h1></div>
