@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { Envelope, Linkedin } from "react-bootstrap-icons";
 import { useEffect } from "react";
 import '../../styling/homepage/about.css'
 
