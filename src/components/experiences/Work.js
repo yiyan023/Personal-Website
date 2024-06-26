@@ -34,7 +34,7 @@ const Work = () => {
 					<a href="https://www.neweicgroup.com/" target="blank"><h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Boston, MA</h4>
 					<p>
-					Incoming part-time intern during Fall 2024
+						Incoming Fall 2024 Full Stack Developer at a pre-seed startup specialized in asset management and quantitative analysis
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
@@ -48,7 +48,12 @@ const Work = () => {
 					<a href="https://www.richmedia.com/" target='blank'><h3 className="vertical-timeline-element-title">Software Developer | Rich Media</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
 					<p>
-					Incoming full-time intern during Summer 2024.
+						<ul>
+							<li>Developed responsive financial literacy web apps for <b>10+ million users</b> that collect user information, perform mathematical computation, and generate PDF documents with customized graphical representations</li>
+							<li>Increased <b>code coverage to 80%+</b> for a property/mortgage protection web app by writing and integrating <b>10+ Cypress E2E tests</b> into a <b>Jenkins server framework</b> for automated regression testing and continuous integration/deployment</li>
+							<li>Enhanced accessibility compliance for <b>150+ digital literacy articles</b> by implementing <b>ARIA features</b> and conducting auditing to ensure compatibility with keyboard navigation and <b>non-visual desktop access (NVDA)</b> standards </li>
+							<li>Achieved data quality for <b>5+ mortgage protection platforms</b> by generating mathematical formulas, computing affordability based on user input, and cross-referencing data outputs with <b>30+ verified test cases</b> using <b>TypeScript</b></li>
+						</ul>
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
@@ -62,11 +67,11 @@ const Work = () => {
 					<a href="https://www.team2706.ca/" target='blank'><h3 className="vertical-timeline-element-title">Software Developer | FIRST Robotics</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Ottawa, ON</h4>
 					<p>
-					<ul>
-						<li>Led the development of a robot vision system that can accurately identify <b>8 unique objects</b> and locate their XYZ coordinates using <b>Python</b> and <b>OpenCV</b></li>
-						<li>Monitored real-time robot location by comparing its position to identified objects for accurate strategy implementation and precise execution during FRC matches</li>
-						<li>Provided accessible coding workshops and hosted robotics demonstrations for <b>6000+ STEM students</b> in Ottawa</li>
-					</ul>
+						<ul>
+							<li>Led the development of a robot vision system that recognizes <b>8 unique objects</b> and tracks their <b>XYZ coordinates</b></li>
+							<li>Increased <b>execution accuracy by 60%</b> during provincial robotics competitions by calculating the surface area of identified objects to derive the robot’s relative distance using <b>pose estimation</b>, <b>WPIMath API</b>, and <b>OpenCV </b></li>
+							<li>Provided accessible coding workshops and hosted robotics demonstrations for <b>6000+ STEM students</b> in Ottawa</li>
+						</ul>
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
