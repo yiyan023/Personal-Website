@@ -34,7 +34,7 @@ const Work = () => {
 					<a href="https://www.neweicgroup.com/" target="blank"><h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Boston, MA</h4>
 					<p>
-						Incoming Fall 2024 Full Stack Developer at a pre-seed startup specialized in asset management and quantitative analysis
+						Incoming Fall 2024 Full Stack Developer at a pre-seed startup specialized in consulting and quantitative analysis
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
@@ -50,9 +50,10 @@ const Work = () => {
 					<p>
 						<ul>
 							<li>Developed responsive financial literacy web apps for <b>10+ million users</b> that collect user information, perform mathematical computation, and generate PDF documents with customized graphical representations</li>
-							<li>Increased <b>code coverage to 80%+</b> for a property/mortgage protection web app by writing and integrating <b>10+ Cypress E2E tests</b> into a <b>Jenkins server framework</b> for automated regression testing and continuous integration/deployment</li>
+							<li>Increased <b>code coverage to 80%+</b> for a property/mortgage protection web app by writing and integrating <b>10+ Cypress E2E tests</b> into a <b>Jenkins server framework</b> for automated regression testing and continuous integration</li>
 							<li>Enhanced accessibility compliance for <b>150+ digital literacy articles</b> by implementing <b>ARIA features</b> and conducting auditing to ensure compatibility with keyboard navigation and <b>non-visual desktop access (NVDA)</b> standards </li>
 							<li>Achieved data quality for <b>5+ mortgage protection platforms</b> by generating mathematical formulas, computing affordability based on user input, and cross-referencing data outputs with <b>30+ verified test cases</b> using <b>TypeScript</b></li>
+							<li>Decreased <b>playback latency by 30%</b> for <b>5 dynamic videos</b> by decoding video frames onto a canvas for user customization, then encoding frames for rendering using <b>MP4Box</b>, <b>MP4-Muxer</b>, and <b>WebCodecs API</b></li>
 						</ul>
 					</p>
 				</VerticalTimelineElement>
@@ -69,7 +70,7 @@ const Work = () => {
 					<p>
 						<ul>
 							<li>Led the development of a robot vision system that recognizes <b>8 unique objects</b> and tracks their <b>XYZ coordinates</b></li>
-							<li>Increased <b>execution accuracy by 60%</b> during provincial robotics competitions by calculating the surface area of identified objects to derive the robot’s relative distance using <b>pose estimation</b>, <b>WPIMath API</b>, and <b>OpenCV </b></li>
+							<li>Increased <b>execution accuracy by 60%</b> during provincial robotics competitions by calculating the surface area of identified objects to derive the robot’s relative distance using <b>Python</b>, <b>OpenCV libraries</b>, and <b>pose estimation</b></li>
 							<li>Provided accessible coding workshops and hosted robotics demonstrations for <b>6000+ STEM students</b> in Ottawa</li>
 						</ul>
 					</p>
