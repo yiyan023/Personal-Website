@@ -25,7 +25,7 @@ const MyBank = () => {
 							HTML
 							<CodeSlash className="social-icons" size={18}/>
 						</button>
-						<button onClick={() => window.open("https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing")}>
+						<button onClick={() => window.open("https://github.com/yiyan023/Rich-Media-Work-Samples/blob/main/My%20Bank/calculator.js")}>
 							JS
 							<CodeSlash className="social-icons" size={18}/>
 						</button>
