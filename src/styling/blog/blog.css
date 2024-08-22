@@ -1,51 +1,50 @@
-.work-title {
+.work-blog .work-title {
 	color: #a08bfd;
 	text-align: center;
 	margin-bottom: 40px;
 }
 
-h2 {
+.work-blog h2 {
 	font-family: Roboto;
 	color: white;
 	text-decoration: none;
-	font-size: 32px;
 	display: inline;
 }
 
-h3 {
+.work-blog h3 {
 	margin-bottom: 10px;
 }
 
-p {
+.work-blog p {
 	font-family: Poppins;
 }
 
-video {
+.work-blog video {
 	width: 100%;
 	height: 100%;
 	object-fit: 'cover'
 }
 
-.rich-media-title:hover {
+.work-blog .rich-media-title:hover {
 	cursor: pointer;
 	color: #a08bfd;
 }
 
-.rich-media-title:active {
+.work-blog .rich-media-title:active {
 	cursor: pointer;
 	color: #8084ff
 }
 
-.work-summary {
+.work-blog .work-summary {
 	text-align: center;
 	margin-bottom: 40px;
 }
 
-.right-arrow {
+.work-blog .right-arrow {
 	transition: transform 0.3s ease;
 }
 
-.right-arrow.active {
+.work-blog .right-arrow.active {
 	transform: rotate(90deg);
 }
 
@@ -62,22 +61,22 @@ video {
 	position: relative;
 }
 
-.work-row {
+.work-blog .work-row {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .work-blog {
-	margin: 100px;
+	margin: 2rem;
 }
 
-.work-project {
+.work-blog .work-project {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
 
-button {
+.work-blog button {
 	padding: 10px;
 	width: 40%;
 	height: fixed;
@@ -92,16 +91,23 @@ button {
 	transition: 0.3s ease-in-out;
 }
 
-button:hover {
+@media screen and (max-width: 500px) {
+	.work-blog button {
+		width: 60%;
+	}
+}
+
+.work-blog button:hover {
 	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 	transform: translate(0, -10%)
 }
 
-.social-icons {
+.work-blog .social-icons {
 	margin-left: 10px;
 	margin-bottom: 3px;
 }
 
-.button-div {
+.work-blog .button-div {
 	margin-bottom: 25px;
+	position: relative;
 }

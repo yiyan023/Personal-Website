@@ -22,11 +22,11 @@ const MyBank = () => {
 					<p data-aos="fade-in" data-aos-delay="500">MyBank is a retirement savings calculator that collects user information and outputs results through customized graphical representations and PDFs. It was built using Vite, JavaScript and jQuery.</p>
 					<div className='button-div' data-aos="fade-in" data-aos-delay="600">
 						<button onClick={() => window.open("https://github.com/yiyan023/Rich-Media-Work-Samples/blob/main/My%20Bank/index.html")}>
-							HTML Code
+							HTML
 							<CodeSlash className="social-icons" size={18}/>
 						</button>
 						<button onClick={() => window.open("https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing")}>
-							JS Code
+							JS
 							<CodeSlash className="social-icons" size={18}/>
 						</button>
 					</div>
