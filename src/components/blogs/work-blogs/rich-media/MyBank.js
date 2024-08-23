@@ -16,7 +16,7 @@ const MyBank = () => {
 	return (
 		<Container className='work-project'>
 			<Row className='work-row'>
-				<Col xs={12} md={10} xl={5} className='text-center text-xl-start'>
+				<Col xs={12} md={10} xl={5} className='text-center text-xl-end'>
 					<h3 data-aos="fade-in" data-aos-delay="400">MyBank Developer Lab</h3>
 					<hr data-aos="fade-in" data-aos-delay="400"></hr>
 					<p data-aos="fade-in" data-aos-delay="500">MyBank is a retirement savings calculator that collects user information and outputs results through customized graphical representations and PDFs. It was built using Vite, JavaScript and jQuery.</p>

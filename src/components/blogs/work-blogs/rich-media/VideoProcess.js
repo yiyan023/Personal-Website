@@ -1,82 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
+import { CodeSlash } from 'react-bootstrap-icons'
+import CanvasFramesVideo from '../../../../assets/videos/canvas-frames-processing.webm'
+
+import AOS from 'aos';
+import 'aos/dist/aos'
 
 const VideoProcess = () => {
+	useEffect(() => {
+		AOS.init({
+			duration: 1000
+		});
+	}, []);
+
   return (
-	<div>
-		<pre>
-		<code lang="javascript">
-			{"import { Muxer, ArrayBufferTarget } from \"./node_modules/mp4-muxer/build/mp4-muxer.mjs\";\n\n" +
-			"let canvas = document.getElementById('myCanvas');\n" +
-			"const ctx = canvas.getContext('2d');\n" +
-			"let frameCounter = 0;\n" +
-			"let intervalID = 0;\n\n" +
-			"let muxer = new Muxer({\n" +
-			"  target: new ArrayBufferTarget(),\n" +
-			"  video: {\n" +
-			"    codec: 'avc',\n" +
-			"    width: canvas.width,\n" +
-			"    height: canvas.height\n" +
-			"  },\n\n" +
-			"  fastStart: 'in-memory',\n" +
-			"  firstTimestampBehavior: 'offset'\n" +
-			"})\n\n" +
-			"const init = {\n" +
-			"  output: (chunk, meta) => muxer.addVideoChunk(chunk, meta),\n" +
-			"  error: (e) => {\n" +
-			"    console.log(e.message)\n" +
-			"  }\n" +
-			"}\n\n" +
-			"const config = {\n" +
-			"  codec: \"avc1.42E01E\", // compress / decompress data\n" +
-			"  width: canvas.width,\n" +
-			"  height: canvas.height,\n" +
-			"  bitrate: 1000000, // number of bits processed per sec\n" +
-			"  framerate: 25, // fps\n" +
-			"}\n\n" +
-			"const encoder = new VideoEncoder(init);\n" +
-			"encoder.configure(config);\n\n" +
-			"function startDrawing() {\n" +
-			"  function animate(elapsed) {\n" +
-			"    encodeFrames();\n\n" +
-			"    //add animation code here!\n\n" +
-			"    if (elapsed < 10) {\n" +
-			"      animate(elapsed + 30/1000)\n" +
-			"    } else {\n" +
-			"      decodeAndRender();\n" +
-			"    }\n" +
-			"  }\n\n" +
-			"  function startAnimation() {\n" +
-			"    animate(0);\n" +
-			"  }\n\n" +
-			"  startAnimation();\n" +
-			"}\n\n" +
-			"const encodeFrames = () => {\n" +
-			"  let frame = new VideoFrame(canvas, {\n" +
-			"    timestamp: frameCounter * 1000000 / 30,\n" +
-			"    duration: 1000000 / 30\n" +
-			"  })\n\n" +
-			"  frameCounter += 1;\n" +
-			"  const keyFrame = frameCounter % 150 == 0;\n" +
-			"  encoder.encode(frame, { keyFrame });\n" +
-			"  frame.close();\n" +
-			"}\n\n" +
-			"async function decodeAndRender() {\n" +
-			"  await encoder.flush(); // video data has been processed\n" +
-			"  muxer.finalize();\n\n" +
-			"  let buffer = muxer.target.buffer;\n" +
-			"  let blob = new Blob([buffer])\n\n" +
-			"  let url = window.URL.createObjectURL(blob)\n" +
-			"  let video = document.createElement('video')\n" +
-			"  video.src = url\n" +
-			"  video.controls = true;\n" +
-			"  document.body.appendChild(video)\n" +
-			"}\n\n" +
-			"window.addEventListener('DOMContentLoaded', () => {\n" +
-			"  startDrawing();\n" +
-			"});"}
-		</code>
-    </pre>
-	</div>
+	<Container className='work-project'>
+			<Row className='work-row'>
+				<Col xs={12} md={10} xl={7}>
+					<video data-aos="fade-in" data-aos-delay="700" src={CanvasFramesVideo} controls={true}/>
+				</Col>
+				<Col xs={12} md={10} xl={5} className='text-center text-xl-start'>
+					<h3 data-aos="fade-in" data-aos-delay="400">Canvas Frames Processor</h3>
+					<hr data-aos="fade-in" data-aos-delay="400"></hr>
+					<p data-aos="fade-in" data-aos-delay="500">Utilized Vite, JavaScript, WebCodecs API and MP4-Muxer to encode canvas frames onto a video element for improved playback. Implemented a simple animation to focus on frame processing.</p>
+					<div className='button-div' data-aos="fade-in" data-aos-delay="600">
+						<button onClick={() => window.open("https://github.com/yiyan023/Rich-Media-Work-Samples/blob/main/Dynamic%20Video%20Project/process.js")}>
+							Code
+							<CodeSlash className="social-icons" size={18}/>
+						</button>
+					</div>
+				</Col>
+			</Row>
+		</Container>
   )
 }
 
