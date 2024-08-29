@@ -22,7 +22,7 @@ export const About = () => {
 						</Col>
 					<Col className="text-center text-xl-start d-flex flex-column justify-content-center align-items-center align-items-xl-start" xs={12} md={8} xl={6}>
 						<h1 data-aos="fade-in" data-aos-delay="500">{`About Me`}</h1>
-						<p className="introduction" data-aos="fade-in" data-aos-delay="1250">Hi, I'm Yiyan, an aspiring full-stack developer and a 2A Computer Science student at the University of Waterloo. As a keen learner who loves solving problems, I am always seeking opportunities to expand my technical skills and build something awesome!</p>
+						<p className="introduction" data-aos="fade-in" data-aos-delay="1250">Hi! 👋 I'm Yiyan, an aspiring full-stack developer and a 2A Computer Science student at the University of Waterloo. As a keen learner who loves solving problems, I am always seeking opportunities to expand my technical skills and build something awesome! In my free time, I love going on runs, watching k-drama and listening to music!</p>
 					</Col>
 				</Row>
 			</Container>
