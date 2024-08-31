@@ -9,6 +9,7 @@ import TravelBuddy from './TravelBuddy'
 import ForgetMeNot from './ForgetMeNot'
 import IngredientSafe from './IngredientSafe'
 import TuneScriber from './TuneScriber';
+import BrailleEnglish from './BrailleEnglish';
 
 const Portfolio = () => {
 	useEffect(() => {
@@ -18,6 +19,7 @@ const Portfolio = () => {
 	return (
 		<div className='portfolio'>
 			<h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">Projects</h1>
+			<BrailleEnglish />
 			<TuneScriber />
 			<TravelBuddy />
 			<YouWriter />
