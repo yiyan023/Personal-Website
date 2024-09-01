@@ -1,4 +1,4 @@
-import { React, useEffect }from 'react'
+import { React, useEffect, useState }from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Github, PlayBtnFill } from 'react-bootstrap-icons'
 import AOS from 'aos'
@@ -10,15 +10,25 @@ import ReactJS from '../../assets/react.png'
 import RestAPI from '../../assets/restapi.png'
 
 const TravelBuddy = () => {
+	const [text, setText] = useState(true)
+
 	useEffect(() => {
 		AOS.init();
-	}, [])
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth <= 325) {
+				setText(false)
+			} else {
+				setText(true)
+			}
+		})
+	}, [text])
 
 	return (
 		<div className='project'>
 			<Container className=''>
 				<Row className='align-items-center justify-content-center'>
-					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
+					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
 						<div className='image-container'>
 							<img className="project-banner" src={TravelBuddyImg} alt="Travel Buddy"/>
 						</div>
@@ -45,11 +55,11 @@ const TravelBuddy = () => {
 						<hr />
 						<p>Aims to make travel more convenient for everyone</p>
 						<button onClick={() => window.open("https://github.com/yiyan023/Travel-Buddy")}>
-							GitHub 
+							{text && "GitHub"}
 							<Github className="social-icons" size={18}/>
 						</button>
 						<button onClick={() => window.open("https://drive.google.com/file/d/1gxdy7aW8iaw1YLzCLXtEkoi8r8feSEY0/view?usp=sharing")}>
-							Demo
+							{text && "Demo"}
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>
 					</Col>

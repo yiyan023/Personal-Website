@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Github, PlayBtnFill } from 'react-bootstrap-icons'
 import AOS from 'aos'
@@ -13,9 +13,19 @@ import MongoDB from '../../assets/mongodb.png'
 
 const YouWriter = () => {
 
+	const [text, setText] = useState(true)
+
 	useEffect(() => {
 		AOS.init();
-	}, [])
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth <= 325) {
+				setText(false)
+			} else {
+				setText(true)
+			}
+		})
+	}, [text])
 
 	return (
 		<div className='project'>
@@ -44,17 +54,17 @@ const YouWriter = () => {
 								</Container>
 							</div>
 					</Col>
-					<Col xs={12} md={10} xl={4} className='project-description text-center text-xl-start justify-content-center' data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-anchor-plaement="center-center">
+					<Col xs={12} md={10} xl={4} className='project-description text-center text-xl-start justify-content-center' data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
 						<h2>YouWriter</h2>
 						<h3>Full Stack Web Application | Jan 2024</h3>
 						<hr />
 						<p>Aims to increase note-taking efficiency for students of all demographics</p>
 						<button onClick={() => window.open("https://github.com/yiyan023/YouWriter")}>
-							GitHub 
+							{text && "GitHub"} 
 							<Github className="social-icons" size={18}/>
 						</button>
 						<button onClick={() => window.open("https://drive.google.com/file/d/19wz9ZFHrJbSOO6o8WEhHr_qE1zhK1pAO/view?usp=sharing")}>
-							Demo
+							{text && "Demo"}
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>
 					</Col>

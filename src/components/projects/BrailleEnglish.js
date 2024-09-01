@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Github, PlayBtnFill } from 'react-bootstrap-icons'
 import AOS from 'aos'
@@ -8,10 +8,20 @@ import BrailleEnglishImg from '../../assets/projects/english-braille.png'
 import Python from '../../assets/python.png'
 
 const BrailleEnglish = () => {
+	const [text, setText] = useState(true)
 
 	useEffect(() => {
 		AOS.init();
-	}, [])
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth <= 325) {
+				setText(false)
+			} else {
+				setText(true)
+			}
+		})
+	}, [text])
+
 
 	return (
 		<div className='project'>
@@ -36,17 +46,17 @@ const BrailleEnglish = () => {
 								</Container>
 							</div>
 					</Col>
-					<Col xs={12} md={10} xl={4} className='project-description text-center text-xl-start justify-content-center' data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-anchor-plaement="center-center">
+					<Col xs={12} md={10} xl={4} className='project-description text-center text-xl-start justify-content-center' data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" >
 						<h2>English-Braille Translator</h2>
 						<h3>Terminal Application | Aug 2024</h3>
 						<hr />
 						<p>Aims to make writing more accessible for the visually impaired.</p>
 						<button onClick={() => window.open("https://github.com/yiyan023/yiyan-eng-intern-challenge/blob/python/python/translator.py")}>
-							GitHub 
+							{text && "GitHub" }
 							<Github className="social-icons" size={18}/>
 						</button>
 						<button onClick={() => window.open("https://drive.google.com/file/d/1FjCIM7lAIfbrFXWjPs0j-75zUTHzlEWP/view?usp=sharing")}>
-							Demo
+							{text && "Demo"}
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>
 					</Col>

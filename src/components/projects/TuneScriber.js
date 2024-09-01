@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Github, PlayBtnFill } from 'react-bootstrap-icons'
 import AOS from 'aos'
@@ -12,15 +12,25 @@ import ReactIMG from '../../assets/react.png'
 import RESTApi from '../../assets/restapi.png'
 
 const TuneScriber = () => {
+	const [text, setText] = useState(true)
+
 	useEffect(() => {
 		AOS.init();
-	}, [])
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth <= 325) {
+				setText(false)
+			} else {
+				setText(true)
+			}
+		})
+	}, [text])
 
 	return (
 		<div className='project'>
-			<Container className=''>
+			<Container className='p-2'>
 				<Row className='align-items-center justify-content-center'>
-					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
+					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" >
 						<div className='image-container'>
 							<img className="project-banner" src={TuneScriberIMG} alt="TuneScriber Banner"/>
 						</div>
@@ -28,7 +38,7 @@ const TuneScriber = () => {
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
 										<Col xs={5} md={5} xl={5} className='tech-summary'>
-											<p>TuneScriber is a full-stack web app that makes musical education more accessible by converting audio files into sheet music (one per instrument).</p>
+											<p>TuneScriber is a full-stack web app that converts audio files into sheet music (one per instrument).</p>
 										</Col>
 										<Col xs={5} md={5} xl={5} >
 										</Col>
@@ -49,11 +59,11 @@ const TuneScriber = () => {
 						<hr />
 						<p>Aims to provide accessible music education.</p>
 						<button onClick={() => window.open("https://github.com/yiyan023/TuneScriber")}>
-							GitHub 
+							{text && "GitHub"}
 							<Github className="social-icons" size={18}/>
 						</button>
 						<button onClick={() => window.open("https://drive.google.com/file/d/1oFRm2GzZL6RhDWPMNlYBwds8h-xtpKI5/view?usp=sharing")}>
-							Demo
+							{text && "Demo"}
 							<PlayBtnFill className="social-icons" size={18}/>
 						</button>
 					</Col>

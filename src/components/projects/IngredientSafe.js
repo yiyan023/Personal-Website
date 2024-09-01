@@ -1,4 +1,4 @@
-import { React, useEffect }from 'react'
+import { React, useEffect, useState }from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Github  } from 'react-bootstrap-icons'
 import AOS from 'aos'
@@ -11,15 +11,25 @@ import OpenCV from '../../assets/opencv.png'
 import Flask from '../../assets/flask.png'
 
 const IngredientSafe = () => {
+	const [text, setText] = useState(true)
+
 	useEffect(() => {
 		AOS.init();
-	}, [])
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth <= 325) {
+				setText(false)
+			} else {
+				setText(true)
+			}
+		})
+	}, [text])
 
 	return (
 		<div className='project'>
 			<Container >
 				<Row className='align-items-center justify-content-center'>
-					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-plaement="center-center">
+					<Col xs={12} md={10} xl={7} className='project-image' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
 						<div className='image-container'>
 							<img className="project-banner" src={ISImg} alt="IngredientSafe"/>
 						</div>
@@ -47,7 +57,7 @@ const IngredientSafe = () => {
 						<hr />
 						<p>Aims to help the visually impaired avoid allergic reactions</p>
 						<button onClick={() => window.open("https://github.com/yiyan023/IngredientSafe")}>
-							GitHub 
+							{text && "GitHub"}
 							<Github className="social-icons" size={18}/>
 						</button>
 					</Col>
