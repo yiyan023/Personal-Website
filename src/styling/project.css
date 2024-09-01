@@ -154,13 +154,7 @@
 
   @media (max-width: 576px) {
 	.project .summary:hover {
-		background-color: rgba(15, 0, 31, 0.7);
-		color: white;
-	  }
-
-  }
-  @media (max-width: 450px) {
-	.project .summary:hover {
 		display: none;
 	  }
+
   }
