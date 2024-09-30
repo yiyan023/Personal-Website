@@ -172,3 +172,9 @@
 		margin: 0px;
 	}
   }
+
+  .portfolio .intro-paragraph {
+    font-family: Poppins;
+    padding: 0 50px 0 50px;
+    text-align: center;
+    }
