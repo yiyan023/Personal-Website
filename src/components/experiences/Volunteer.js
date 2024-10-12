@@ -6,6 +6,8 @@ import Para from '../../assets/para.png'
 import Piano from '../../assets/piano.png'
 import Sba from '../../assets/sba.png'
 import Tournie from '../../assets/tournie.png'
+import WiCS from '../../assets/wics.png'
+import CSC from '../../assets/csc.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +24,36 @@ const Volunteer = () => {
 		<h1 data-aos="fade-in" data-aos-delay="300">Other Experiences</h1>
 		<p data-aos="fade-in" data-aos-delay="300" className='intro'>Non-technical experiences that showcase my passions and soft skills</p>
 		<Container className='experiences'>
+    <Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
+				<Col className='event' xs={10} md={8} xl={5}>
+				<div className='image-container'>
+					<img src={WiCS} alt="Fall 2024 WiCS committee team photo!"/>
+				</div>
+					<a href="https://wics.uwaterloo.ca/" target="blank">
+						<div className='image-overlay'>
+							<p className='explain'>Responsible for planning and promoting Women in Computer Science (WiCS) events at the University of Waterloo.</p>
+						</div>
+					</a>
+					<div className='description'>
+						<h2>Director of Publicity</h2>
+						<p className='describe'>Sept 2024 - Present | University of Waterloo WiCS</p>
+					</div>
+				</Col>
+				<Col className='event' xs={10} md={8} xl={5}>
+					<div className='image-container'>
+						<img src={CSC} alt="Uwaterloo Computer Science Club Logo"/>
+					</div>
+					<a href="https://csclub.uwaterloo.ca/" target="blank">
+						<div className='image-overlay'>
+							<p className='explain'>Responsible for building the 2024 Class Profile website for the University of Waterloo Computer Science Club.</p>
+						</div>
+					</a>
+					<div className='description'>
+						<h2>Web Developer</h2>
+						<p className='describe'>Sept 2024 - Present | University of Waterloo CS Club</p>
+					</div>
+				</Col>
+			</Row>
 			<Row data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" className='justify-content-center align-items-center'>
 				<Col className='event' xs={10} md={8} xl={5}>
 					<div className='image-container'>
