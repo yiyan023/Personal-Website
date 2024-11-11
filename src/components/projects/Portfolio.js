@@ -11,6 +11,7 @@ import IngredientSafe from './IngredientSafe'
 import TuneScriber from './TuneScriber';
 import BrailleEnglish from './BrailleEnglish';
 import PizzaStudio from './PizzaStudio';
+import Acceleratr from './Acceleratr';
 
 const Portfolio = () => {
 	useEffect(() => {
@@ -20,9 +21,10 @@ const Portfolio = () => {
 	return (
 		<div className='portfolio'>
 			<h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">Projects</h1>
-      <div data-aos="fade-in" data-aos-delay="300" className='intro-paragraph'><p>8 projects and counting :).</p></div>
+      <div data-aos="fade-in" data-aos-delay="300" className='intro-paragraph'><p>9 projects and counting :).</p></div>
+			<Acceleratr />
 			<PizzaStudio />
-      <BrailleEnglish />
+      		<BrailleEnglish />
 			<TuneScriber />
 			<TravelBuddy />
 			<YouWriter />
