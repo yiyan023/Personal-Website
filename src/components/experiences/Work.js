@@ -27,21 +27,21 @@ const Work = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date={<><CalendarCheck /> Sept 2024 - present</>}
+					date={<><CalendarCheck /> Jan 2025 - present</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
-					<a href="https://www.neweicgroup.com/" target="blank"><h3 className="vertical-timeline-element-title">Full Stack Developer | NEW EIC</h3></a>
-					<h4 className="vertical-timeline-element-subtitle">Boston, MA</h4>
+					<a href="https://pointclickcare.com/" target="blank"><h3 className="vertical-timeline-element-title">Software Engineering Intern | PointClickCare </h3></a>
+					<h4 className="vertical-timeline-element-subtitle">Kitchener, ON</h4>
 					<p>
-						Incoming Fall 2024 Full Stack Developer at a pre-seed startup specialized in consulting and quantitative analysis
+						Current Winter 2025 software engineering intern at a unicorn startup specialized in building software to optimize the healthcare system
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: '#fff', color: '#1b0135' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-					date={<><CalendarCheck /> May 2024 - present</>}
+					date={<><CalendarCheck /> May 2024 - Aug 2024</>}
 					iconStyle={{ background: '#5339c4', color: '#fff' }}
 					icon={<CodeIcon />}
 				>
