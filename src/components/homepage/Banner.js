@@ -41,26 +41,6 @@ export const Banner = () => {
 		return () => { clearInterval(ticker)};
 	}, [text, delta, isDeleting, loopNum ])
 
-	/* function scrollDown() {
-
-		const screenWidth = window.innerWidth;
-
-    let scrollDistance;
-
-    if (screenWidth <= 576) {
-        scrollDistance = 850; 
-    } else if (screenWidth > 576 && screenWidth < 992) {
-        scrollDistance = 780;
-    } else if (screenWidth >= 992) {
-        scrollDistance = 745;
-    }
-
-		window.scrollBy({
-			top: scrollDistance,
-			behavior: 'smooth' 
-		});
-	} */
-
 	return (
 		<section className="banner" id="home">
 			<Container>
@@ -70,10 +50,7 @@ export const Banner = () => {
 							<h1 className="name">{`Hi, I'm Yiyan Huang:`}</h1>
 							<div className="fix-height"><h1 className="role">{text}</h1></div>
 							<p className="normal-text">A second-year CS student at the University of Waterloo</p>
-						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/10cva9mGFWaVpByPzdfMUnW9BCdPrKa8Z/view?usp=sharing')}> View Resume <ArrowRightCircle className="resume" size={25} /> </button>
-						{/* <div className="next">
-							<button className="next-button" onClick={scrollDown}><ArrowDownShort size={50} /> </button>
-						</div> */}
+						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/13hMotHEbqZqr-Rs-L3cPDaQ0vRvZuK5n/view?usp=sharing')}> View Resume <ArrowRightCircle className="resume" size={25} /> </button>
 					</Col>
 				</Row>
 				</div>

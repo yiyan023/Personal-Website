@@ -38,7 +38,7 @@
 	position: relative;
 	color: #fff !important;
 	font-family: Averia;
-	background-color:  rgb(27, 1, 53);
+	background-color: #0f011e;
 	overscroll-behavior: contain;
   }
   
@@ -47,11 +47,11 @@
 	padding: 0;
 	line-height: normal;
   }
-
+ 
   .skill {
-	background-color: #0f011e;
+	background-color:#0f011e;
   }
 
   .home {
-	background-color: rgb(27, 1, 53);
+	background-color: #0f011e;
   }

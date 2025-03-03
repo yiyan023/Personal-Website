@@ -55,7 +55,7 @@ const Education = () => {
 			<Container>
 				<h1 data-aos="fade-in" data-aos-delay="400">Education</h1>
 				<Row className='education-one' ref={educationOneRef}>
-					<Col xs={12} md={10} xl={3} data-aos="fade-in" data-aos-delay="500"><h3><CalendarCheck /> Sept 2023 - Present</h3></Col>
+					<Col xs={12} md={10} xl={3} data-aos="fade-in" data-aos-delay="500"><h3><CalendarCheck />Sept 2023 - Present</h3></Col>
 					<Col xs={12} md={10} xl={4} className='school-info'>
 						<button className='h2' data-aos="fade-in" data-aos-delay="500" onClick={toggleDropdown}>University of Waterloo<TriangleFill  className='triangle-fill' style={{ transform: isDropdownVisible ? 'scale(-0.5)' : 'scale(-0.5) rotate(90deg)' }}/></button>
 						{isDropdownVisible && (

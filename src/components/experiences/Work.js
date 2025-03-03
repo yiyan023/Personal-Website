@@ -34,7 +34,13 @@ const Work = () => {
 					<a href="https://pointclickcare.com/" target="blank"><h3 className="vertical-timeline-element-title">Software Engineering Intern | PointClickCare </h3></a>
 					<h4 className="vertical-timeline-element-subtitle">Kitchener, ON</h4>
 					<p>
-						Current Winter 2025 software engineering intern at a unicorn startup specialized in building software to optimize the healthcare system
+						Provided care management services for <b>2.7M+ users</b> by implementing new features based on user feedback, optimizing database querying performance, and writing automated E2E/unit tests using <b>React</b>, <b>Cypress</b>, and <b>SQL</b>
+					</p>
+					<p>
+						Led the development of a care plan mapping service that adds goals/tasks to patient profiles by handling <b>3000+ PostgreSQL entries</b>, relaxing user permissions, and improving response time by <b>700ms</b> using <b>JavaScript</b> and <b>Java</b>
+					</p>
+					<p>
+						Increased <b>code coverage to 83%</b> by writing <b>10+ TestNG unit tests</b> to validate JavaScript logic and data retrieval
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
