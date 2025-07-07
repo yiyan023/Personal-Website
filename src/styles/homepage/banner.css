@@ -1,0 +1,209 @@
+.banner {
+	margin-top: 0;
+	padding: 250px 15px 250px 15px;
+	background-image: url('../../assets/images/home/ocean.jpg');
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  }
+
+  .banner .fix-height {
+	height: 55px;
+  }
+
+  .banner .tagline {
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	padding: 8px 10px;
+	background: linear-gradient(90.21deg, #8084ff -5.91%, rgb(32, 37, 178));
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	margin-bottom: 16px;
+	display: inline-block;
+  }
+  .banner .name {
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: block;
+	color: rgb(190, 176, 255);
+  }
+
+  .banner p {
+	color: #B8B8B8;
+	letter-spacing: 0.8px;
+	line-height: 1.5em;
+	width: 96%;
+  }
+  .banner .resume-button {
+	background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+	font-weight: 700;
+	font-family: Roboto;
+	letter-spacing: 0.8px;
+	padding: 8px 10px;
+	color: white;
+	font-size: 20px;
+	margin-top: 2em;
+	display: flex;
+	align-items: center;
+  }
+
+  .banner .resume{
+	font-size: 25px;
+	margin-left: 10px;
+	transition: 0.3s ease-in-out;
+	line-height: 1;
+  }
+  .banner .resume-button:hover .resume {
+	margin-left: 25px;
+  }
+
+  @keyframes upDown {
+    0% {
+		transform: translateY(-8px);
+	} 
+
+	50% {
+		transform: translateY(8px);
+	}
+
+	100% {
+		transform: translateY(-8px);
+	}
+}
+
+  .about img {
+	height: 75%;
+	width: 75%;
+	animation: upDown 3s linear infinite;
+
+  }
+
+  .txt-rotate > .wrap {
+	border-right: 0.08em solid #666;
+  }
+
+  .name {
+	color: rgb(190, 176, 255);
+  }
+
+  .banner .role {
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: block;
+	font-family: Roboto;
+	color: white;
+  }
+
+  .normal-text {
+	font-family: Poppins;
+  }
+
+  @media(min-width: 1200px) {
+	.banner .next {
+		top: 35%;
+	}
+
+	.banner .name {
+		font-size: 65px;
+	}
+
+	.banner .role {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+  }
+
+  @media(max-width: 1199px) {
+	.banner .next {
+		top: 30%;
+	}
+
+	.banner .name {
+		font-size: 65px;
+	}
+
+	.banner .role {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+  }
+
+  @media(max-width: 576px) {
+	.banner .next {
+		top: 30%;
+	}
+
+	.banner .name {
+		font-size: 50px;
+	}
+
+	.banner .role {
+		font-size: 23px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+  }
+
+  @media(max-width: 300px) {
+	.banner .next {
+		top: 25%;
+	}
+
+	.banner .name {
+		font-size: 50px;
+	}
+
+	.banner .role {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+  }
+
+  .banner .next {
+	position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+	transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0; 
+  }
+
+  .banner .next:hover {
+	transform: translateX(-50%) scale(1.3); 
+	opacity: 100;
+  }
+
+  .banner .next-button {
+	background-color: transparent;
+	border: transparent;
+	color: transparent;
+	height: 100px;
+	width: 100px;
+  }
+
+  .banner .next-button:hover {
+	color: #fff;
+	cursor: pointer;
+  }
+
+  .banner .my-introduction {
+	padding: 0px 75px 0 0px;
+  }

@@ -1,0 +1,192 @@
+.awards {
+	background-color: #0f011e;
+  }
+
+  .awards h1 {
+	color: #a08bfd;
+	text-align: center;
+	margin-bottom: 5px;
+  }
+
+  .awards p {
+	text-align: center;
+  }
+  
+  .awards .intro-paragraph {
+	font-family: Poppins;
+	padding: 0 50px 0 50px;
+  }
+
+  .awards h2 {
+	font-family: Roboto;
+	text-align: center;
+  }
+
+  .awards .awards-grid {
+	padding: 50px 0 100px 0;
+  }
+
+  .awards .award-single {
+	padding: 5px;
+	margin: 10px;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+	position: relative;
+  }
+
+  .awards .award-pair {
+	padding: 5px;
+	margin: 10px;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+	position: relative;
+  }
+
+  .awards img {
+	border-radius: 0.5rem;
+	max-width: 100%;
+	height: auto;
+  }
+
+  .awards .description {
+	background-color: #0f011e;
+	margin: 40px 20px 20px 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .awards .description hr {
+	border: none;
+	height: 1px;
+	background-color: white;
+	margin: 10px 0 20px 0;
+	width: 100%;
+  }
+  
+  .awards .image-container {
+	overflow: hidden;
+	margin: 8px;
+	border-radius: 0.5rem;
+	max-width: 100%;
+	height: auto;
+  }
+
+  .awards .image-overlap {
+	background-color: transparent;
+	position: absolute;
+	border-radius: 0.5em;
+	top: 1%;
+	padding: 10px;
+	width: 98%;
+	color: transparent;
+	transition: fade-in 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .awards .award-pair .image-overlap {
+	height: 80%;
+	top: 0%;
+  }
+
+  @media (min-width: 993px) {
+	.awards .image-overlap {
+		height: 84%;
+	}
+
+	.awards .explain {
+		font-size: 20px;
+		padding: 0 75px 0 75px;
+	}
+
+	.awards h2 {
+		font-size: 25px;
+	}
+	
+  }
+
+  @media (max-width: 992px) {
+	.awards .image-overlap {
+		height: 80%;
+	}
+
+	.awards .explain {
+		font-size: 20px;
+		padding: 0 50px 0 50px;
+	}
+
+	.awards h2 {
+		font-size: 25px;
+	}
+  }
+
+  @media (max-width: 576px) {
+	.awards .image-overlap {
+		height: 79%;
+	}
+
+	.awards .explain {
+		font-size: 15px;
+		padding: 0 50px 0 50px;
+	}
+
+	.awards h2 {
+		font-size: 20px;
+	}
+
+  }
+  @media (max-width: 400px) {
+	.awards .image-overlap {
+		height: 69%;
+		top: 3%;
+	}
+
+	.award-pair .image-overlap:hover {
+		display: none;
+	}
+
+	.awards .explain {
+		font-size: 12px;
+		padding: 0 25px 0 25px;
+	}
+
+	.awards h2 {
+		font-size: 16px;
+	}
+  }
+
+  .awards .image-overlap:hover {
+	background-color: rgba(15, 0, 31, 0.7);
+	color: white;
+  }
+
+  .awards .explain {
+	font-family: Poppins;
+  }
+
+.awards .award-pair img {
+	transition: transform 0.3s ease; 
+	height: auto;
+	overflow: hidden;
+	display: block;
+}
+
+.awards .award-single img {
+	transition: transform 0.3s ease; 
+	height: auto;
+	overflow: hidden;
+	display: block;
+}
+
+  .awards .award-pair:hover img {
+	transform: scale(1.1);
+  }
+
+  .awards .award-single:hover img {
+	transform: scale(1.1);
+  }
