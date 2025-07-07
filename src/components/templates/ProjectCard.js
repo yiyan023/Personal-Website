@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
 		return project.technologies.map(tech => {
 			const iconName = techIcons[tech];
 			if (iconName) {
-				return require(`../../assets/${iconName}`);
+				return require(`../../assets/images/tech/${iconName}`);
 			}
 			return null;
 		}).filter(Boolean);
