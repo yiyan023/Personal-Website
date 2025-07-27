@@ -29,7 +29,7 @@ export const extracurricularData = [
   {
     id: 'wics-publicity',
     title: 'Director of Publicity',
-    date: 'Sept 2024 - Present',
+    date: 'Sept 2024 - Apr 2025',
     organization: 'University of Waterloo WiCS',
     image: 'images/extracurriculars/wics.png',
     description: 'Responsible for planning and promoting Women in Computer Science (WiCS) events at the University of Waterloo.',

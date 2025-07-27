@@ -1,7 +1,15 @@
 export const awardData = [
+  {
+    id: 'kp-hackathon-win',
+    title: "Winner of KP Fellows Hackathon",
+    date: 'July 2025',
+    organization: 'Kleiner Perkins',
+    image: 'images/awards/kphackathon.png',
+    explanation: 'This award was presented by Dan Li, the CEO of Nooks AI, who chose the project with the most technical depth and product vision. In other words, he selected the project that he would have most likely invested in.'
+},
 {
-    id: 'waterloo-scholarship',
-    title: "Best Hack for Gender Equity and Female Empowerment",
+    id: 'technova-win',
+    title: "Best Hack for Female Empowerment",
     date: 'Nov 2024',
     organization: 'TechNova 2024',
     image: 'images/awards/technova.png',

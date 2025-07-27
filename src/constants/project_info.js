@@ -1,5 +1,17 @@
 export const projectData = [
   {
+    id: 'telescope',
+    title: 'Telescope',
+    subtitle: 'MCP Middleware | July 2025',
+    description: 'Aims to improve security and observability for MCP servers.',
+    summary: 'Telescope is a MCP proxy that tracks MCP server access and protects clients from malicious MCPs, data theft and prompt injections.',
+    image: 'images/projects/telescope.png',
+    technologies: ['python', 'typescript', 'flask', 'react', 'restapi'],
+    github: 'https://github.com/yiyan023/sentinel-proxy-vision',
+    demo: 'https://drive.google.com/file/d/1ZAR6izUWMK85MsXIHORMQ8U4HHO6HSUN/view?usp=sharing',
+    hasDemo: true
+  },
+  {
     id: 'easyware',
     title: 'Easyware',
     subtitle: 'AI Application | May 2025',
@@ -11,6 +23,7 @@ export const projectData = [
     demo: 'https://www.youtube.com/watch?v=U1jhCoc070E&ab_channel=YiyanHuang',
     hasDemo: true
   },
+
   {
     id: 'acceleratr',
     title: 'Acceleratr',
