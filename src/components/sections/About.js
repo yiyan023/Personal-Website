@@ -29,6 +29,8 @@ export const About = () => {
 							<br />
 							• building @ Harvey AI
 							<br />
+							• participating in the Kleiner Perkins Fellowship
+							<br />
 							• listening to music & playing lots of badminton
 						</p>
 					</Col>
