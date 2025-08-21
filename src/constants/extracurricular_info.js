@@ -1,8 +1,17 @@
 export const extracurricularData = [
   {
+    id: 'wics-co-chair',
+    title: 'Co-Chair',
+    date: 'Aug 2025 - Present',
+    organization: 'University of Waterloo WiCS',
+    image: 'images/extracurriculars/wics-social.png',
+    description: 'Responsible for planning and promoting Women in Computer Science (WiCS) events at the University of Waterloo.',
+    link: 'https://www.kleinerperkins.com/fellows/'
+  },
+  {
     id: 'kp-fellow',
     title: 'Engineering Fellow',
-    date: 'May 2025 - Present',
+    date: 'May 2025 - Aug 2025',
     organization: 'Kleiner Perkins',
     image: 'images/extracurriculars/kpfellow.png',
     description: 'Connecting with VCs and startup founders in the SF Bay Area. Selected as 1 of 30 fellows from 5000+ applicants.',

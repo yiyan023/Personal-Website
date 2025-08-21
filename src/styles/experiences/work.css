@@ -12,9 +12,10 @@
 
 .work a {
 	text-decoration: none;
+	color: #5339c4;
 }
 
-.work a:hover h3 {
+.work a:hover {
 	color:#9482e2
 }
 

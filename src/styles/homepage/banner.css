@@ -1,6 +1,9 @@
 .banner {
 	margin-top: 0;
-	padding: 250px 15px 250px 15px;
+	min-height: 100vh;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
 	background-image: url('../../assets/images/home/ocean.jpg');
 	background-position: top center;
 	background-size: cover;

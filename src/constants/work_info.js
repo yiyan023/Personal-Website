@@ -1,17 +1,20 @@
 export const workInfo = [
     {
 		company: "Harvey AI",
-		position: "Software Engineering Intern",
+		position: "Software Engineer Intern",
 		location: "San Francisco, CA",
-		date: "May 2025 - Present",
+		date: "May 2025 - Aug 2025",
 		link: "https://harvey.ai/",
 		bullets: [
-            "Current Software Engineering Intern at a <b>USD 3B+</b> unicorn startup specializing in domain-specific AI for law firms"
+            "Developed internal tools that streamlined Engineering workflows at a <b>5B+ USD</b> unicorn startup, reducing cross-team friction and cutting manual work by <b>6+ hours daily</b> using <b>Flask</b>, <b>JavaScript</b>, <b>Kubernetes</b> and <b>Microsoft Azure</b>",
+			"Architected an automation pipeline in <b>Python</b> and <b>YAML</b> that provides engineers self-service access to run Kubernetes Jobs in staging and production, improving team velocity by <b>cutting turnaround time by 70%</b>",
+			"<b>Reduced deployment rollbacks by 25%</b> by spearheading a tool for Engineers to update secrets in Azure Key Vaults upon approval, auto-generating GitHub pull requests to eliminate user errors using <b>Flask</b> and <b>JavaScript</b>",
+			"<b>Minimized escalations to user operation specialists by 40%</b> by building a <a href='https://ping.harvey.ai' target='_blank'>web app</a> that pings internal Harvey endpoints to debug firewall and network issues for <b>500+ clients</b> across <b>North America</b>, <b>Europe</b> and <b>Australia</b>"	
         ]
         },
 	{
 		company: "PointClickCare",
-		position: "Software Engineering Intern",
+		position: "Software Engineer Intern",
 		location: "Kitchener, ON",
 		date: "Jan 2025 - Apr 2025",
 		link: "https://pointclickcare.com/",
@@ -25,7 +28,7 @@ export const workInfo = [
 	},
 	{
 		company: "Rich Media",
-		position: "Software Developer",
+		position: "Software Developer Intern",
 		location: "Toronto, ON",
 		date: "May 2024 - Aug 2024",
 		link: "https://www.richmedia.com/",
