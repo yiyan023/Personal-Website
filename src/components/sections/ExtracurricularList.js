@@ -8,7 +8,7 @@ import ExtracurricularCard from '../templates/ExtracurricularCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Extracurriculars = () => {
+const ExtracurricularList = () => {
 	useEffect(() => {
 		AOS.init({
 			duration: 1000
@@ -56,4 +56,4 @@ const Extracurriculars = () => {
 	)
 }
 
-export default Extracurriculars
+export default ExtracurricularList

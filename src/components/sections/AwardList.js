@@ -1,6 +1,6 @@
 import { Container, Row } from 'react-bootstrap'
 import { React, useEffect } from 'react'
-import '../../styles/skills/award.css'
+import '../../styles/awards/award.css'
 
 import { awardData } from '../../constants/award_info';
 import AwardCard from '../templates/AwardCard';

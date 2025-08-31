@@ -1,17 +1,17 @@
 import React from 'react'
 
 import { NavBar } from "../../components/common/NavBar";
-import Work from '../../components/sections/Work';
+import ExtracurricularList from '../../components/sections/ExtracurricularList';
 import Footer from '../../components/common/Footer';
 
-const Experience = () => {
+const Extracurriculars = () => {
   return (
 	<div>
 		<NavBar />
-		<Work />
+		<ExtracurricularList />
 		<Footer />
 	</div>
   )
 }
 
-export default Experience;
+export default Extracurriculars;
