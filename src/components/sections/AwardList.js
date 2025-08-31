@@ -8,7 +8,7 @@ import AwardCard from '../templates/AwardCard';
 import AOS from 'aos';
 import 'aos/dist/aos';
 
-const Awards = () => {
+const AwardList = () => {
 	
 	useEffect(() => {
 		AOS.init({
@@ -59,4 +59,4 @@ const Awards = () => {
 	)
 }
 
-export default Awards
+export default AwardList

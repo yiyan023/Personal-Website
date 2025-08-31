@@ -1,18 +1,16 @@
 import { React } from 'react'
 import { NavBar } from "../../components/common/NavBar";
-import { List } from '../../components/sections/SkillList';
-import Awards from '../../components/sections/Awards';
+import AwardList from '../../components/sections/AwardList';
 import Footer from '../../components/common/Footer';
 
-const Skills = () => {
+const Awards = () => {
 	return (
 		<div className="skill" id="skill">
 			<NavBar />
-			<List />
-			<Awards />
+			<AwardList />
 			<Footer />
 		</div>
 	)
 }
 
-export default Skills
+export default Awards
