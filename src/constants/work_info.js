@@ -6,10 +6,10 @@ export const workInfo = [
 		date: "May 2025 - Aug 2025",
 		link: "https://harvey.ai/",
 		bullets: [
-            "Developed internal tools that streamlined Engineering workflows at a <b>5B+ USD</b> unicorn startup, reducing cross-team friction and cutting manual work by <b>6+ hours daily</b> using <b>Flask</b>, <b>JavaScript</b>, <b>Kubernetes</b> and <b>Microsoft Azure</b>",
-			"Architected an automation pipeline in <b>Python</b> and <b>YAML</b> that provides engineers self-service access to run Kubernetes Jobs in staging and production, improving team velocity by <b>cutting turnaround time by 70%</b>",
-			"<b>Reduced deployment rollbacks by 25%</b> by spearheading a tool for Engineers to update secrets in Azure Key Vaults upon approval, auto-generating GitHub pull requests to eliminate user errors using <b>Flask</b> and <b>JavaScript</b>",
-			"<b>Minimized escalations to user operation specialists by 40%</b> by building a <a href='https://ping.harvey.ai' target='_blank'>web app</a> that pings internal Harvey endpoints to debug firewall and network issues for <b>500+ clients</b> across <b>North America</b>, <b>Europe</b> and <b>Australia</b>"	
+            "Developed internal tools that streamlined engineering workflows at a <b>5B+ USD</b> unicorn startup, reducing cross-team friction and cutting manual work by <b>6+ hours daily</b> using <b>Flask</b>, <b>JavaScript</b>, <b>Kubernetes</b> and <b>Microsoft Azure</b>",
+			"<b>Accelerated turnaround time by 70%</b> by architecting an automation pipeline that provides engineers with self-service access to run Kubernetes Jobs and database migration scripts in staging and production using <b>Python</b>",
+			"<b>Reduced deployment rollbacks by 25%</b> by orchestrating a tool for engineers to update secrets in Azure Key Vaults and auto-generate GitHub pull requests to update secret versions in the codebase using <b>Flask</b> and <b>JavaScript</b>",
+			"<b>Minimized escalations to user operation specialists by 40%</b> by building a <a href='https://ping.harvey.ai' target='_blank'>web app</a> that pings internal Harvey endpoints and websockets to debug firewall and network issues for <b>500+ clients</b> across <b>50+ countries</b>"	
         ]
         },
 	{
