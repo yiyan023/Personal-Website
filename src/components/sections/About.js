@@ -23,15 +23,17 @@ export const About = () => {
 					<Col className="text-center text-xl-start d-flex flex-column justify-content-center align-items-center align-items-xl-start" xs={12} md={8} xl={6}>
 						<h1 data-aos="fade-in" data-aos-delay="500">{`About Me`}</h1>
 						<p className="introduction" data-aos="fade-in" data-aos-delay="1250">
-							Hi! 👋 I'm Yiyan. Currently, I'm:
+							Hi! 👋 I'm Yiyan. I'm
 							<br />
-							• studying CS at the University of Waterloo
+							• a CS student at the University of Waterloo
 							<br />
-							• building @ Harvey AI
+							• a Kleiner Perkins Fellow (class of 2025)
+                            <br />
+                            • Previous SWE Intern at <a href="http://harvey.ai/" target="blank">Harvey</a> and <a href="https://pointclickcare.com/" target="blank">PointClickCare</a>
 							<br />
-							• participating in the Kleiner Perkins Fellowship
+							• an incoming SWE Intern at <a href="https://ramp.com/" target="blank">Ramp</a> 
 							<br />
-							• listening to music & playing lots of badminton
+							• an avid music and badminton lover
 						</p>
 					</Col>
 				</Row>

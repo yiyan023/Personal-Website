@@ -25,19 +25,16 @@
   }
 
   .about a {
-	display: block;
-	color: rgb(255, 255, 255);
+	color: rgb(190, 176, 255);
 	text-decoration: none; 
-	margin-bottom: 10px;
-	font-size: 18px;
   }
 
   .about a:hover {
-	color: rgb(190, 176, 255);
+	color: rgb(166, 146, 255);
   }
 
   .about a:active {
-	color: #a08bfd;
+	color: rgb(141, 116, 253);
   }
 
   @media(min-width: 1200px) {

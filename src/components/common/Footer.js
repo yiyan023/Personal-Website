@@ -50,10 +50,10 @@ const Footer = () => {
 				</div>
 				<div className='song'>
 					<p>Song on repeat:</p>
-					<a href="https://open.spotify.com/track/5Jh1i0no3vJ9u4deXkb4aV" target="blank">
+					<a href="https://open.spotify.com/track/4OAuvHryIVv4kMDNSLuPt6" target="blank">
 						<strong>
 							<p className={`${animate ? 'animate-text' : ''}`} id="song-name">
-								so american by Olivia Rodrigo
+								Red (Taylor's Version) by Taylor Swift
 							</p>
 						</strong>
 					</a>
