@@ -2,7 +2,7 @@ export const extracurricularData = [
   {
     id: 'wics-co-chair',
     title: 'Co-Chair',
-    date: 'Aug 2025 - Present',
+    date: 'Aug 2025 - Dec 2025',
     organization: 'University of Waterloo WiCS',
     image: '/images/extracurriculars/wics-social.png',
     description: 'Responsible for planning and promoting Women in Computer Science (WiCS) events at the University of Waterloo.',
