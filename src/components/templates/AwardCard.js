@@ -2,7 +2,7 @@ import { React } from 'react'
 import { Col, Row } from 'react-bootstrap'
 
 const AwardCard = ({ award, isFullWidth = false }) => {
-	const awardImage = require(`../../assets/${award.image}`);
+	const awardImage = award.image;
 
 	if (isFullWidth) {
 		return (

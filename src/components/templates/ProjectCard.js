@@ -21,13 +21,13 @@ const ProjectCard = ({ project }) => {
 		})
 	}, [text])
 
-	const projectImage = require(`../../assets/${project.image}`);
+	const projectImage = project.image;
 
 	const getTechIcons = () => {
 		return project.technologies.map(tech => {
 			const iconName = techIcons[tech];
 			if (iconName) {
-				return require(`../../assets/images/tech/${iconName}`);
+				return `/images/tech/${iconName}`;
 			}
 			return null;
 		}).filter(Boolean);

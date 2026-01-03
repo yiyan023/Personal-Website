@@ -7,6 +7,8 @@ import Awards from './pages/Awards'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import Extracurriculars from './pages/Extracurriculars';
+import Blogs from './pages/Blogs'
+import Blog from './pages/Blog'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
 			<Route path="/experiences" element={<Experience />} />
 			<Route path="/projects" element={<Projects />} />
 			<Route path="/extracurriculars" element={<Extracurriculars />} />
+			<Route path="/blogs" element={<Blogs />} />
+			<Route path="/blogs/:blogId" element={<Blog />} />
 		</Routes>
 	</Router>
   );

@@ -2,7 +2,7 @@ import { React } from 'react'
 import { Col, Row } from 'react-bootstrap'
 
 const ExtracurricularCard = ({ extracurricular, isFullWidth = false }) => {
-	const extracurricularImage = require(`../../assets/${extracurricular.image}`);
+	const extracurricularImage = extracurricular.image;
 
 	if (isFullWidth) {
 		return (

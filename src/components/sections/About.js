@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useEffect } from "react";
 import '../../styles/homepage/about.css'
 
-import Portrait from '../../assets/images/home/portrait.png';
+import Portrait from '../../images/home/portrait.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

@@ -4,11 +4,11 @@ import { useNavigate, useLocation  } from "react-router-dom";
 import $ from 'jquery'
 import '../../styles/nav.css'
 
-import logo from '../../assets/images/home/yh.png';
-import Insta from '../../assets/images/social-icons/instagram.png';
-import GitHub from '../../assets/images/social-icons/github.png';
-import LinkedIn from '../../assets/images/social-icons/linkedin.png'
-import Gmail from '../../assets/images/social-icons/email.png'
+import logo from '../../images/home/yh.png';
+import Insta from '../../images/social-icons/instagram.png';
+import GitHub from '../../images/social-icons/github.png';
+import LinkedIn from '../../images/social-icons/linkedin.png';
+import Gmail from '../../images/social-icons/email.png';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -69,6 +69,7 @@ export const NavBar = () => {
 							<Nav.Link to="/extracurriculars" className={activeLink === 'extracurriculars' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('extracurriculars'); navigate('/extracurriculars')}}>Extracurriculars</Nav.Link>
 							<Nav.Link to="/awards" className={activeLink === 'awards' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('awards'); navigate('/awards')}}>Awards</Nav.Link>
 							<Nav.Link to="/projects" className={activeLink === 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('projects'); navigate('/projects')}}>Projects</Nav.Link>
+							<Nav.Link to="/blogs" className={activeLink === 'blogs' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('blogs'); navigate('/blogs')}}>Blogs</Nav.Link>
 						</Nav>
 						<span className="navbar-text">
 							<div className="social-icon">
