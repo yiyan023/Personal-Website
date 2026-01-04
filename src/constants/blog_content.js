@@ -7,7 +7,7 @@ export const blogContentData = [
         image: "/images/blogs/kp-group-picture.jpg",
         content: `
             <div class="blog-content">                
-                <h3>a reflection of my past self</h3>
+                <h3>reflecting on my past self</h3>
                 <p>
                    During my first year at uWaterloo, I noticed that everyone thrived on career-based validation. Everyone was constantly chasing prestige and status, and there were certain buzzwords (i.e., SF, NYC, startup, FAANG) that attracted students like a moth to a flame. It didn’t matter who you talked to; the first question they would always ask was: <i>Did you find a co-op for next summer? Where are you working?</i> I felt like I was stuck in this academic pyramid scheme where the more I heard these phrases, the harder it became to escape them. When two students in my grade landed their first software engineering internship at Bloomberg, they quickly became celebrities on campus. Everyone spoke of them with such reverence that it felt like they were worshipping two Gods.
                 </p>
