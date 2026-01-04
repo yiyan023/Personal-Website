@@ -21,7 +21,7 @@ export const blogContentData = [
                     While my friends started posting on LinkedIn and talking about their excitement, I couldn’t help but feel resentful and guilty. I felt envious of their accomplishments and guilty about secretly resenting them. While there was always this voice telling me I should just be happy they’re doing well, I couldn’t help but hate them at the same time. I hate that they couldn’t see how much I was hurting every time they talked about their jobs. I hate that I didn't have the nepotism to land an internship while others did. I hate feeling like I deserved a job more just because I worked harder. Reflecting on these emotions, I realized that chasing prestige has made me this resentful and unhappy person I didn't recognize anymore.
                 </p>
                 
-                <h3>the light at the end of the tunnel</h3>
+                <h3>light at the end of the tunnel</h3>
                 <p>
                     After eight treacherous months, I landed my first internship offer in April 2024 (Cycle 6 for my Waterloo friends). Despite being over a year ago, I remember how euphoric it felt to lift this weight off my chest. I couldn’t believe that my hard work paid off, and I could finally rest in relief. The hardest part of my undergrad journey was over.
                 </p>
