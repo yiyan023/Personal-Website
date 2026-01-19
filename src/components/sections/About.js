@@ -27,11 +27,13 @@ export const About = () => {
 							<br />
 							• a CS student at the University of Waterloo
 							<br />
-							• a Kleiner Perkins Fellow (class of 2025)
+							• a <a href="https://www.kleinerperkins.com/fellows/" target="blank">Kleiner Perkins Fellow</a> (class of 2025)
+                            <br />
+							• a <a href="https://paretofellowship.com/" target="blank">Pareto Fellow</a> (inaugural cohort)
                             <br />
                             • Previous SWE Intern at <a href="http://harvey.ai/" target="blank">Harvey</a> and <a href="https://pointclickcare.com/" target="blank">PointClickCare</a>
 							<br />
-							• an incoming SWE Intern at <a href="https://ramp.com/" target="blank">Ramp</a> 
+							• an incoming SWE Intern at <a href="https://ramp.com/" target="blank">Ramp</a> and <a href="https://www.langchain.com/" target="blank">Langchain</a>
 							<br />
 							• an avid music and badminton lover
 						</p>
