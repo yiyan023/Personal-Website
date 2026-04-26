@@ -22,7 +22,7 @@ const Footer = () => {
 		let songName = document.getElementById("song-name");
 
 		function checkOverflow(element) {
-			return element.clientWidth <= element.scrollWidth;
+			return element.clientWidth < element.scrollWidth;
 		}
 		
 		window.addEventListener("scroll", function(event) {
@@ -50,10 +50,10 @@ const Footer = () => {
 				</div>
 				<div className='song'>
 					<p>Song on repeat:</p>
-					<a href="https://open.spotify.com/track/2NxsPbmbLr6Dw7yYnMGJdo?si=cb65cfdbaff146e1" target="blank">
+					<a href="https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs?si=fe522ed8d0524798" target="blank">
 						<strong>
 							<p className={`${animate ? 'animate-text' : ''}`} id="song-name">
-								PRIVATE by The Kid LAROI
+								Iris by The Goo Goo Dolls
 							</p>
 						</strong>
 					</a>

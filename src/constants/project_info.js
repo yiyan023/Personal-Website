@@ -1,5 +1,17 @@
 export const projectData = [
   {
+    id: 'mock-interviews',
+    title: 'Mock Interviews With Yiyan',
+    subtitle: 'Web Application | April 2026',
+    description: 'Calendar booking platform for my mock interview side hustle, where I help other students land their dream offers.',
+    summary: 'Mock interview booking platform that integrates Stripe, Google Calendar API, and Google STMP to handle payments, email confirmations, and calendar invites.',
+    image: '/images/projects/interview.png',
+    technologies: ['python', 'typescript', 'flask', 'react', 'restapi'],
+    github: 'https://github.com/yiyan023/mock-interview-frontend',
+    demo: 'https://mock-interview-frontend-black.vercel.app/',
+    hasDemo: true
+  },
+  {
     id: 'telescope',
     title: 'Telescope',
     subtitle: 'MCP Middleware | July 2025',

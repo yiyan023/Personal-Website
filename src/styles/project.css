@@ -33,7 +33,6 @@
 
   .project {
 	padding: 75px 0 0 0;
-	overflow: hidden;
 	display: flex;
 	flex-direction: row;
   }
@@ -72,7 +71,6 @@
   .portfolio .project-image .project-banner {
 	transition: transform 0.3s ease; 
 	height: auto;
-	overflow: hidden;
 	display: block;
 }
 

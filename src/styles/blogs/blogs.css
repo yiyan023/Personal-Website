@@ -45,7 +45,6 @@
   .blog .description {
 	background-color: #0f011e;
 	margin: 40px 20px 20px 20px;
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

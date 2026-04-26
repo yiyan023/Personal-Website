@@ -1,5 +1,13 @@
 export const awardData = [
   {
+    id: 'edinburgh-exchange',
+    title: "President's International Experience Scholarship",
+    date: 'Jan 2026',
+    organization: 'University of Waterloo',
+    image: '/images/awards/europe.jpg',
+    explanation: "A $2500 scholarship given to students participating in an international experience. I was awarded this scholarship to study abroad at Heriot-Watt University (Edinburgh, UK)."
+  },
+  {
     id: 'kp-hackathon-win',
     title: "Winner of KP Fellows Hackathon",
     date: 'July 2025',

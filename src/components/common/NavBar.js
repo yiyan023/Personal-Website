@@ -5,7 +5,7 @@ import $ from 'jquery'
 import '../../styles/nav.css'
 
 import logo from '../../images/home/yh.png';
-import Insta from '../../images/social-icons/instagram.png';
+import Substack from '../../images/social-icons/substack.png';
 import GitHub from '../../images/social-icons/github.png';
 import LinkedIn from '../../images/social-icons/linkedin.png';
 import Gmail from '../../images/social-icons/email.png';
@@ -73,7 +73,7 @@ export const NavBar = () => {
 						</Nav>
 						<span className="navbar-text">
 							<div className="social-icon">
-								<a href="https://www.instagram.com/yiyanhh" className="social-buttons" target="blank"><img src={Insta} alt="Instagram"/></a>
+								<a href="https://yiyanhh.substack.com/" className="social-buttons" target="blank"><img src={Substack} alt="Substack"/></a>
 								<a href="https://github.com/yiyan023" className="social-buttons" target="blank"><img src={GitHub} alt="GitHub"/></a>
 								<a href="https://www.linkedin.com/in/yiyanhh/" className="social-buttons" target="blank"><img src={LinkedIn} alt="LinkedIn"/></a>
 								<a href="mailto:y84huang@uwaterloo.ca" className="social-buttons" target="blank"><img src={Gmail} alt="Gmail"/></a>

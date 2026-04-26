@@ -53,7 +53,6 @@
 .blog-image-container {
   margin: 40px 0;
   border-radius: 0.5rem;
-  overflow: hidden;
   box-shadow: 0 0 20px rgba(190, 176, 255, 0.3);
 }
 
