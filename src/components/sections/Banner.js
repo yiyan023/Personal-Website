@@ -11,7 +11,7 @@ export const Banner = () => {
 	const period = 100;
 	
 	useEffect(() => {
-		const toRotate = ["Software Engineer,", "Full Stack Developer,", "Web Developer,", "Backend Developer,", ]
+		const toRotate = ["Software Engineer,", "Problem Solver,", "Self-Starter,", "Builder,", "Backend Developer,", "Tinkerer," ]
 
 		const tick = () => {
 			let i = loopNum % toRotate.length;
