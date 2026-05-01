@@ -1,5 +1,5 @@
 .about {
-	background-color: #0f011e;
+	background-color: #071521;
 	margin-top: 0;
 	padding: 125px 0 75px 0;
 	justify-content: right;
@@ -11,11 +11,15 @@
 	line-height: 1;
 	margin-bottom: 20px;
 	display: block;
-	color: rgb(190, 176, 255);
+	color: #7AAEC0;
   }
 
   .about .portrait {
 	align-items: center;
+  }
+
+  .about .portrait img {
+	border-radius: 18px;
   }
 
   .about .introduction {
@@ -25,16 +29,16 @@
   }
 
   .about a {
-	color: rgb(190, 176, 255);
+	color: #8FA8BC;
 	text-decoration: none; 
   }
 
   .about a:hover {
-	color: rgb(166, 146, 255);
+	color: #7AAEC0;
   }
 
   .about a:active {
-	color: rgb(141, 116, 253);
+	color: #8FA8BC;
   }
 
   @media(min-width: 1200px) {

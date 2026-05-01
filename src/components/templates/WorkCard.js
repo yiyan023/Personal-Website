@@ -22,13 +22,13 @@ const WorkCard = ({ work }) => {
 			contentStyle={{ background: '#fff', color: '#1b0135' }}
 			contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
 			date={<><CalendarCheck /> {work.date}</>}
-			iconStyle={{ background: '#5339c4', color: '#fff' }}
+			iconStyle={{ background: '#205889', color: '#fff' }}
 			icon={getIcon()}
 		>
-			<a href={work.link} target="blank">
+			<a href={work.link} target="_blank" rel="noopener noreferrer">
 				<h3 className="vertical-timeline-element-title">{work.position} | {work.company}</h3>
+				<h4 className="vertical-timeline-element-subtitle">{work.location}</h4>
 			</a>
-			<h4 className="vertical-timeline-element-subtitle">{work.location}</h4>
 			<p>
 				{work.bullets.length === 1 ? (
 					<span dangerouslySetInnerHTML={{ __html: work.bullets[0] }} />

@@ -1,31 +1,35 @@
 .work {
-	background-color: #0f011e;
+	background-color: #071521;
 	margin-top: 75px;
 	padding-top:100px;
 	margin-bottom: 75px;
 }
 
 .work h1 {
-	color: #a08bfd;
+	color: #7AAEC0;
 	text-align: center;
 	margin-bottom: 40px;
 }
 
 .work a {
 	text-decoration: none;
-	color: #5339c4;
+	color: #7AAEC0;
 }
 
 .work a:hover {
-	color:#9482e2
+	color:#205889
 }
 
-.work a:active h3 {
-	color: rgb(109, 77, 253)
+.work .vertical-timeline-element-title {
+	color: #205889;
+}
+
+.work a:hover .vertical-timeline-element-title {
+	color: #071521;
 }
 
 .work .vertical-timeline-element-content {
-	border-top: 4px solid #5339c4;
+	border-top: 4px solid #7AAEC0;
 }
 
 @media (max-width: 1169px) {
@@ -41,12 +45,13 @@
 }
 
 .work h3 {
-	font-family: Roboto;
-	color: #5339c4;
+	font-family: Inter;
+	color: #7AAEC0;
 }
 
 .work h4 {
 	font-size: 20px;
+	color: #7AAEC0;
 }
 
 .work p {

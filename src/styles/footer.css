@@ -1,5 +1,5 @@
 .footer {
-	background-color: #1b0135;
+	background-color: #132C42;
 	color: white;
 	padding: 40px;
 	display: flex;
@@ -30,9 +30,9 @@
 }
 
 .footer .fav-song {
-	background-color:#0f011e;
+	background-color:#132C42;
 	padding: 20px;
-	color: hsla(238, 100%, 75%, 0.75);
+	color: rgba(143, 168, 188, 0.9);
 	font-family: Poppins;
 	display: flex;
 	flex-direction: row;
@@ -42,7 +42,7 @@
 	min-width: 190px;
 	white-space: nowrap;
 	overflow: hidden;
-	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+	box-shadow: 0 0 12px rgba(122, 174, 192, 0.45);
 }
 
 @keyframes revealText {
@@ -78,13 +78,19 @@
 
 .footer .fav-song .spotify-logo {
 	margin-right: 15px;
+	color: #7AAEC0;
+}
+
+.footer .fav-song .spotify-logo svg {
+	color: #7AAEC0;
+	fill: currentColor;
 }
 
 .footer p {
 	margin: 0;
-	font-family: Roboto;
+	font-family: Inter;
 	font-size: 15px;
-	color: #8084ff;
+	color: #8FA8BC;
 	opacity: 0.75;
 }
 
@@ -93,9 +99,10 @@
 }
 
 .footer a:hover p {
+	color: #7AAEC0;
 	opacity: 1;	
 }
 .footer a:active p {
-	color: #a08bfd;
+	color: #8FA8BC;
 }
   

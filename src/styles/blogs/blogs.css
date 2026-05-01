@@ -1,11 +1,11 @@
 .blog {
-	background-color: #0f011e;
+	background-color: #071521;
 	margin-top: 40px;
 	padding: 125px 0 125px 0;
   }
 
   .blog h1 {
-	color: #a08bfd;
+	color: #7AAEC0;
 	text-align: center;
 	margin-bottom: 5px;
   }
@@ -20,9 +20,11 @@
   }
 
   .blog h2 {
-	font-family: Roboto;
+	font-family: Inter;
 	text-align: center;
-  }
+  
+	color: #7AAEC0;
+}
 
   .blog .blogs {
 	padding: 50px 0 100px 0;
@@ -32,7 +34,7 @@
 	padding: 5px;
 	margin: 10px;
 	border-radius: 0.5rem;
-	box-shadow: 0 0 5px rgb(190, 176, 255, 0.5);
+	box-shadow: 0 0 12px rgba(122, 174, 192, 0.45);
 	position: relative;
   }
 
@@ -43,7 +45,7 @@
   }
 
   .blog .description {
-	background-color: #0f011e;
+	background-color: #071521;
 	margin: 40px 20px 20px 20px;
 	display: flex;
 	flex-direction: column;
@@ -94,7 +96,9 @@
 
 	.blog h2 {
 		font-size: 25px;
-	}
+	
+		color: #7AAEC0;
+}
 	
   }
 
@@ -110,7 +114,9 @@
 
 	.blog h2 {
 		font-size: 25px;
-	}
+	
+		color: #7AAEC0;
+}
   }
 
   @media (max-width: 576px) {
@@ -123,9 +129,11 @@
 		padding: 0 50px 0 50px;
 	}
 
-	.volunteer h2 {
-		font-size: 20px;	
-	}
+	.blog h2 {
+		font-size: 20px;
+
+		color: #7AAEC0;
+}
 
   }
   @media (max-width: 400px) {
@@ -141,11 +149,13 @@
 
 	.blog h2 {
 		font-size: 16px;
-	}
+	
+		color: #7AAEC0;
+}
   }
 
   .blog .image-overlay:hover {
-	background-color: rgba(15, 0, 31, 0.7);
+	background-color: rgba(7, 21, 33, 0.7);
 	color: white;
   }
 
@@ -167,21 +177,21 @@
 
   .blog a {
 	text-decoration: none;
-	color: inherit;
+	color: #8FA8BC;
 	display: block;
 	width: 100%;
   }
 
   .blog a:hover {
 	text-decoration: none;
-	color: inherit;
+	color: #7AAEC0;
   }
 
   .blog a:visited {
-	color: inherit;
+	color: #8FA8BC;
   }
 
   .blog a:focus {
-	color: inherit;
+	color: #8FA8BC;
 	outline: none;
   }

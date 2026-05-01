@@ -63,14 +63,14 @@ const ProjectCard = ({ project }) => {
 						<h3>{project.subtitle}</h3>
 						<hr />
 						<p>{project.description}</p>
-						<button onClick={() => window.open(project.github)}>
-							{text && "GitHub"} 
-							<Github className="social-icons" size={18}/>
+						<button type="button" className="resume-button" onClick={() => window.open(project.github)}>
+							{text && "GitHub"}
+							<Github className="resume" size={18} />
 						</button>
 						{project.hasDemo && (
-							<button onClick={() => window.open(project.demo)}>
+							<button type="button" className="resume-button" onClick={() => window.open(project.demo)}>
 								{text && "Demo"}
-								<PlayBtnFill className="social-icons" size={18}/>
+								<PlayBtnFill className="resume" size={18} />
 							</button>
 						)}
 					</Col>

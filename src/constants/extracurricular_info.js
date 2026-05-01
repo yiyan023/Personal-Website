@@ -38,7 +38,7 @@ export const extracurricularData = [
   {
     id: 'htn-sponsorship',
     title: 'Sponsorship Coordinator',
-    date: 'Mar 2025 - Present',
+    date: 'Mar 2025 - Sept 2025',
     organization: 'Hack the North',
     image: '/images/extracurriculars/htn.png',
     description: 'Raising $XXX XXX and building corporate relationships for Canada\'s largest hackathon.',

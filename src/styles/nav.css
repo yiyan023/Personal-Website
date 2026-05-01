@@ -12,23 +12,37 @@ nav.navbar {
 	top: 0;
 	z-index: 9999;
 	transition:  0.32s ease-in-out;
-	background-color: rgb(27, 1, 53);
+	background-color: #132C42;
 	display: flex;
 	justify-content: space-between;
   }
   nav.navbar.scrolled {
 	padding: 0px 0;
-	background-color: 121212;
+	background-color: #132C42;
   }
   nav.navbar a.navbar-brand {
 	  width: 9%;
 	  padding: 20px;
 	  position: fixed;
 	  background-color: transparent;
+	  display: inline-block;
+  }
+
+  nav.navbar a.navbar-brand img {
+	  display: block;
+	  transition: transform 0.3s ease-in-out;
+  }
+
+  nav.navbar a.navbar-brand:hover img {
+	  transform: translateY(-6%);
+  }
+
+  nav.navbar a.navbar-brand:active img {
+	  transform: none;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
 	font-weight: 400;
-	color: #8084ff !important;
+	color: #8FA8BC !important;
 	letter-spacing: 0.8px;
 	padding: 0 25px;
 	font-size: 18px;
@@ -36,8 +50,13 @@ nav.navbar {
 	text-align: center;
   }
   
-  nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+  nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+	  color: #7AAEC0 !important;
+	  opacity: 1;
+  }
+
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+	  color: #8FA8BC !important;
 	  opacity: 1;
   }
 
@@ -49,40 +68,37 @@ nav.navbar {
   }
 
   .social-icon a {
+	  position: relative;
 	  width: 35px;
 	  height: 35px;
-	  background: 121212;
+	  background-color: #132C42;
 	  display: inline-flex;
 	  border-radius: 50%;
 	  align-items: center;
 	  justify-content: center;
 	  line-height: 1;
-	  border: 1px solid rgb(128, 132, 255);
+	  border: 1px solid #7AAEC0;
 	  margin-right: 8px;
 	  margin-left: 8px;
+	  cursor: pointer;
+	  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
-  .social-icon a::before {
-	  content: "";
-	  width: 42px;
-	  height: 42px;
-	  position: absolute;
-	  background-color: #8084ff;
-	  border-radius: 50%;
-	  transform: scale(0);
-	  transition: 0.3s ease-in-out;
+  .social-icon a:hover {
+	  transform: translateY(-14%);
+	  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
   }
-  .social-icon a:hover::before {
-	  transform: scale(1);
+
+  .social-icon a:active {
+	  transform: none;
+	  box-shadow: none;
   }
+
   .social-icon a img {
 	  width: 35px;
 	  height: 35px;
 	  z-index: 1;
-	  transition: 0.3s ease-in-out;
-  }
-  .social-icon a:hover img {
-	  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) brightness(95%) contrast(86%);
+	  position: relative;
   }
  
   .navbar-text button {
@@ -179,7 +195,7 @@ nav.navbar {
   @media (max-width: 992px) {
 	nav.navbar .navbar-collapse {
 		text-align: center;
-		background-color: rgb(27, 1, 53);
+		background-color: #132C42;
 		position: absolute;
 		right: 0;
 		top: 50px;

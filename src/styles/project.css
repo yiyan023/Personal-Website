@@ -1,7 +1,7 @@
 .portfolio {
 	margin-top: 100px;
 	padding: 80px 0 40px 0;
-	background-color: #0f011e;
+	background-color: #071521;
   }
 
   .portfolio .introduction {
@@ -10,20 +10,28 @@
 
   .portfolio h1 {
 	text-align: center;
-	color: #a08bfd;
+	color: #7AAEC0;
   }
 
   .portfolio h2 {
-	font-family: Roboto;
+	font-family: Inter;
 	padding-bottom: 5px;
 	margin-top: 10px;
 	font-size: 2rem;
-  }
+  
+	color: #7AAEC0;
+}
 
   .portfolio h3 {
 	font-size: 1.5rem;
 	margin-bottom: 20px;
-  }
+  
+	color: #7AAEC0;
+}
+
+  .portfolio .project .project-description h3 {
+	color: #fff;
+}
 
   .portfolio p {
 	font-family: Poppins;
@@ -103,36 +111,56 @@
 	justify-content: center;
 }
 
-.portfolio .project button {
-	padding: 10px;
-	width: 40%;
-	height: fixed;
+/* Match .banner .resume-button */
+.portfolio .project .resume-button {
+	background: #447D92;
+	font-weight: 700;
+	font-family: Inter;
+	letter-spacing: 0.8px;
+	padding: 12px 20px;
+	color: white;
+	font-size: 20px;
+	margin-top: 1rem;
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
-	margin-top: 1rem;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 20px;
-	background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-	font-family: Roboto;
-	color: white;
-	transition: 0.3s ease-in-out;
-}
-
-.portfolio .project button .social-icons {
-	margin-left: 10px;
-	margin-bottom: 3px;
-}
-
-.portfolio .project button:hover {
-	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-	transform: translate(0, -10%);
+	gap: 8px;
+	border: 1px solid #8FA8BC;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: none;
 	cursor: pointer;
+	transition: background 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	width: auto;
+	min-width: 0;
+}
+
+.portfolio .project .resume-button .resume {
+	margin-left: 10px;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.portfolio .project .resume-button:hover {
+	background: #305867;
+	border: 1px solid #8FA8BC;
+	outline: none;
+	transform: translateY(-10%);
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio .project .resume-button:active {
+	background: #305867;
+	border: 1px solid #8FA8BC;
+	outline: none;
+	box-shadow: none;
 }
 
 @media (min-width: 993px) {
 	.project .summary:hover {
-		background-color: rgba(15, 0, 31, 0.7);
+		background-color: rgba(7, 21, 33, 0.7);
 		color: white;
 	  }
 
@@ -143,7 +171,7 @@
 
   @media (max-width: 992px) {
 	.project .summary:hover {
-		background-color: rgba(15, 0, 31, 0.7);
+		background-color: rgba(7, 21, 33, 0.7);
 		color: white;
 	  }
 
@@ -159,16 +187,20 @@
 
 	.portfolio h2 {
 		font-size: 1.5rem;
-	}
+	
+		color: #7AAEC0;
+}
 
 	.portfolio h3 {
 		font-size: 1rem;
-	}
+	
+		color: #7AAEC0;
+}
   }
 
   @media screen and (max-width: 325px) {
-	.portfolio .project button .social-icons {
-		margin: 0px;
+	.portfolio .project .resume-button .resume {
+		margin: 0;
 	}
   }
 

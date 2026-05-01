@@ -57,7 +57,7 @@ export const NavBar = () => {
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : "notScrolled"}>
-                <Navbar.Brand href="/"><img src={logo} height="130" width="130" href="#home" alt="logo"/>
+                <Navbar.Brand href="/"><img src={logo} height="75" href="#home" alt="logo"/>
                 </Navbar.Brand>
                 <div className="toggle">
 					<Navbar.Toggle aria-controls="basic-navbar-nav">
