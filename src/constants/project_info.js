@@ -132,7 +132,6 @@ export const projectData = [
   },
 ];
 
-// Technology icon mapping
 export const techIcons = {
   javascript: 'javascript.png',
   python: 'python.png',
