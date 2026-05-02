@@ -136,6 +136,12 @@ nav.navbar {
 	  height: 100%;
 	  position: absolute;
   }
+  nav.navbar .navbar-toggler {
+	  background-color: transparent !important;
+	  border: none;
+	  padding: 0.35rem 0.5rem;
+  }
+
   nav.navbar .navbar-toggler:active,
   nav.navbar .navbar-toggler:focus {
 	  outline: none;
@@ -144,35 +150,14 @@ nav.navbar {
   nav.navbar .navbar-toggler-icon {
 	width: 24px;
 	height: 17px;
+	background-color: transparent !important;
 	background-image: none;
 	border-bottom: 2px solid #8FA8BC;
 	transition: all 300ms linear;
-	position: fixed;
-	right: 20%;
+	position: relative;
+	right: auto;
   }
 
-  nav.navbar .navbar-toggler-icon.toggled,
-  nav.navbar .navbar-toggler-icon.toggled:after,
-  nav.navbar .navbar-toggler-icon.toggled:before  {
-	border-bottom: 2px solid white;
-  }
-
-  nav.navbar .navbar-toggler-icon:hover {
-	border-bottom: 2px solid white;
-  }
-
-  nav.navbar .navbar-toggler-icon:active {
-	border-bottom: 2px solid white;
-  }
-
-  nav.navbar .navbar-toggler-icon:hover:after,
-  nav.navbar .navbar-toggler-icon:hover:before {
-	background-color: white;
-  }
-
-  nav.navbar .navbar-toggler-icon:focus {
-	  border-bottom: 2px solid #8FA8BC;
-  }
   nav.navbar .navbar-toggler-icon:after,
   nav.navbar .navbar-toggler-icon:before {
 	  width: 24px;
@@ -224,19 +209,35 @@ nav.navbar {
   nav.navbar .navbar-toggler-icon:after {
 	  top: 8px;
   }
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	  transform: rotate(45deg);
+  nav.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon:after,
+  nav.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon:before {
 	  background-color: #fff;
-	  height: 2px;
   }
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	  transform: translateY(8px) rotate(-45deg);
-	  background-color: #fff;
-	  height: 2px;
+
+  nav.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+	  border-bottom: 2px solid #fff;
+	  background-color: transparent !important;
   }
-  nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	  border-color: transparent;
-	  background-color: #fff;
+
+  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon:after,
+  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon:before {
+	  background-color: #8FA8BC;
+  }
+
+  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+	  border-bottom: 2px solid #8FA8BC;
+	  background-color: transparent !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+	  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon:hover {
+		border-bottom: 2px solid #fff;
+	  }
+
+	  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon:hover:after,
+	  nav.navbar .navbar-toggler.collapsed .navbar-toggler-icon:hover:before {
+		background-color: #fff;
+	  }
   }
 
   .navbar-text {

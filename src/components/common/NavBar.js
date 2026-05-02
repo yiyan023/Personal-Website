@@ -1,7 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation  } from "react-router-dom";
-import $ from 'jquery'
 import '../../styles/nav.css'
 
 import logo from '../../images/home/yh.png';
@@ -13,25 +12,10 @@ import Gmail from '../../images/social-icons/email.png';
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState("false"); 
-	const [dropdown, setDropdown] = useState(false);
+	const [navExpanded, setNavExpanded] = useState(false);
 
 	const navigate = useNavigate();
 	const location = useLocation();
-
-	useEffect(() => {
-		let $dropdown = $(".navbar-collapse");
-		let dropdownButton = document.getElementById("dropdown-icon")
-
-		dropdownButton.addEventListener("click", function(event) {
-			if (!$dropdown.is(":visible")) {
-				setDropdown(true);
-				console.log("visible");
-			} else {
-				setDropdown(false);
-			}
-
-		})
-	}, [])
 
     useEffect(() => {
         const onScroll = () => {
@@ -56,20 +40,25 @@ export const NavBar = () => {
 	  }, [location]);
 
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : "notScrolled"}>
+        <Navbar
+			expand="lg"
+			expanded={navExpanded}
+			onToggle={setNavExpanded}
+			className={scrolled ? "scrolled" : "notScrolled"}
+		>
                 <Navbar.Brand href="/"><img src={logo} height="75" href="#home" alt="logo"/>
                 </Navbar.Brand>
                 <div className="toggle">
-					<Navbar.Toggle aria-controls="basic-navbar-nav">
-						<span className={`navbar-toggler-icon ${dropdown ? 'toggled' : ''}`} id="dropdown-icon"></span>
+					<Navbar.Toggle aria-controls="basic-navbar-nav" aria-expanded={navExpanded}>
+						<span className="navbar-toggler-icon"></span>
 					</Navbar.Toggle>
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
-							<Nav.Link to="/experiences" className={activeLink === 'experience' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('experience'); navigate('/experiences')}}>Experience</Nav.Link>
-							<Nav.Link to="/extracurriculars" className={activeLink === 'extracurriculars' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('extracurriculars'); navigate('/extracurriculars')}}>Extracurriculars</Nav.Link>
-							<Nav.Link to="/awards" className={activeLink === 'awards' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('awards'); navigate('/awards')}}>Awards</Nav.Link>
-							<Nav.Link to="/projects" className={activeLink === 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('projects'); navigate('/projects')}}>Projects</Nav.Link>
-							<Nav.Link to="/blogs" className={activeLink === 'blogs' ? "active navbar-link" : "navbar-link"} onClick={() => {onUpdateActiveLink('blogs'); navigate('/blogs')}}>Blogs</Nav.Link>
+							<Nav.Link to="/experiences" className={activeLink === 'experience' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('experience'); navigate('/experiences'); }}>Experience</Nav.Link>
+							<Nav.Link to="/extracurriculars" className={activeLink === 'extracurriculars' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('extracurriculars'); navigate('/extracurriculars'); }}>Extracurriculars</Nav.Link>
+							<Nav.Link to="/awards" className={activeLink === 'awards' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('awards'); navigate('/awards'); }}>Awards</Nav.Link>
+							<Nav.Link to="/projects" className={activeLink === 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('projects'); navigate('/projects'); }}>Projects</Nav.Link>
+							<Nav.Link to="/blogs" className={activeLink === 'blogs' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('blogs'); navigate('/blogs'); }}>Blogs</Nav.Link>
 						</Nav>
 						<span className="navbar-text">
 							<div className="social-icon">
