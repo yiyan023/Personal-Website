@@ -266,7 +266,7 @@ button.pokemon-ranking__card:focus-visible {
 	font-size: 1.35rem;
 	font-weight: 700;
 	color: #7aaec0 !important;
-	font-family: Inter, sans-serif;
+	font-family: "DM Sans", sans-serif;
 	margin: 0;
 }
 
@@ -538,7 +538,7 @@ button.pokemon-ranking__card:focus-visible {
 	font-weight: 700;
 	color: #7aaec0;
 	margin: 0 0 0.85rem 0;
-	font-family: Inter, sans-serif;
+	font-family: "DM Sans", sans-serif;
 }
 
 .pokemon-profile-modal__move-detail-dl {
@@ -563,13 +563,14 @@ button.pokemon-ranking__card:focus-visible {
 .pokemon-profile-modal__move-detail-row dt {
 	margin: 0;
 	color: #8fa8bc;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 .pokemon-profile-modal__move-detail-row dd {
 	margin: 0;
 	color: rgba(255, 255, 255, 0.95);
 	line-height: 1.5;
+	font-weight: 300;
 }
 
 @media (max-width: 400px) {
