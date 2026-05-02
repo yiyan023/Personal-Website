@@ -65,12 +65,12 @@ const ProjectCard = ({ project }) => {
 						<p>{project.description}</p>
 						<button type="button" className="resume-button" onClick={() => window.open(project.github)}>
 							{text && "GitHub"}
-							<Github className="resume" size={18} />
+							<Github className="resume" size={22} />
 						</button>
 						{project.hasDemo && (
 							<button type="button" className="resume-button" onClick={() => window.open(project.demo)}>
 								{text && "Demo"}
-								<PlayBtnFill className="resume" size={18} />
+								<PlayBtnFill className="resume" size={22} />
 							</button>
 						)}
 					</Col>

@@ -113,32 +113,37 @@
 
 .portfolio .project .resume-button {
 	background: #447D92;
-	font-weight: 700;
-	font-family: Inter;
-	letter-spacing: 0.8px;
-	padding: 12px 20px;
+	font-weight: 300;
+	font-family: Inter, sans-serif;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	padding: 10px 16px;
 	color: white;
-	font-size: 20px;
+	font-size: 17px;
 	margin-top: 1rem;
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: 6px;
 	border: 1px solid #8FA8BC;
-	border-radius: 10px;
+	border-radius: 8px;
 	outline: none;
 	box-shadow: none;
 	cursor: pointer;
-	transition: background 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition:
+		background 0.3s ease-in-out,
+		border 0.3s ease-in-out,
+		transform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out;
 	width: auto;
 	min-width: 0;
 }
 
 .portfolio .project .resume-button .resume {
-	margin-left: 10px;
-	font-size: 18px;
+	margin-left: 8px;
+	font-size: 22px;
 	line-height: 1;
 }
 
@@ -154,6 +159,7 @@
 	background: #305867;
 	border: 1px solid #8FA8BC;
 	outline: none;
+	transform: none;
 	box-shadow: none;
 }
 
