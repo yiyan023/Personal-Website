@@ -44,10 +44,10 @@ const ProjectCard = ({ project }) => {
 						<div className='summary'>
 								<Container className='d-flex justify-content-center align-items-center'>
 									<Row>
-										<Col xs={5} md={5} xl={5} className='tech-summary'>
+										<Col xs={6} md={6} xl={7} className='tech-summary'>
 											<p>{project.summary}</p>
 										</Col>
-										<Col xs={5} md={6} xl={5} >
+										<Col xs={5} md={5} xl={4}>
 										</Col>
 										<Col xs={1} md={1} xl={1} className='tech-stack'>
 											{getTechIcons().map((icon, index) => (
