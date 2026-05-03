@@ -1,5 +1,5 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation  } from "react-router-dom";
 import '../../styles/nav.css'
 
@@ -13,9 +13,29 @@ export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState("false"); 
 	const [navExpanded, setNavExpanded] = useState(false);
+	const navbarRef = useRef(null);
 
 	const navigate = useNavigate();
 	const location = useLocation();
+
+	useEffect(() => {
+		if (!navExpanded) return;
+		const closeOnScroll = () => setNavExpanded(false);
+		window.addEventListener("scroll", closeOnScroll, { passive: true });
+		return () => window.removeEventListener("scroll", closeOnScroll);
+	}, [navExpanded]);
+
+	useEffect(() => {
+		if (!navExpanded) return;
+		const closeIfOutside = (event) => {
+			const root = navbarRef.current;
+			if (root && !root.contains(event.target)) {
+				setNavExpanded(false);
+			}
+		};
+		document.addEventListener("pointerdown", closeIfOutside, true);
+		return () => document.removeEventListener("pointerdown", closeIfOutside, true);
+	}, [navExpanded]);
 
     useEffect(() => {
         const onScroll = () => {
@@ -41,6 +61,7 @@ export const NavBar = () => {
 
     return (
         <Navbar
+			ref={navbarRef}
 			expand="lg"
 			expanded={navExpanded}
 			onToggle={setNavExpanded}

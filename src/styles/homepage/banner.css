@@ -84,7 +84,7 @@
   .banner .name {
 	font-family: "Outfit", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 700;
+	font-weight: 600;
 	font-style: normal;
 	letter-spacing: 0.8px;
 	line-height: 1;
@@ -197,7 +197,7 @@
   }
 
   .banner .role {
-	font-weight: 700;
+	font-weight: 650;
 	letter-spacing: 0.8px;
 	line-height: 1;
 	margin-bottom: 20px;
