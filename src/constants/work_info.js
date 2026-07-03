@@ -1,6 +1,17 @@
 export const workInfo = [
     {
-		company: "Harvey AI",
+        company: "Ramp",
+		position: "Software Engineer Intern",
+		location: "New York City, NY",
+		date: "May 2026 - Present",
+		link: "http://ramp.com/",
+		bullets: [
+            "Increased accepted business applications by <b>10%</b> by building a multi-user app supporting four applicant types, simultaneous editing, and permission transfers for <b>5,000+ businesses</b> applying monthly using <b>Python</b> and <b>React</b>",
+            "<b>Reduced latency by 67%</b> by migrating a scoring pipeline that prioritizes high-prospect customers for sales-assisted onboarding from <b>Celery</b> to <b>Temporal</b> to support parallelization and failure-handling policies using <b>Python</b>"
+        ]
+    },
+    {
+		company: "Harvey",
 		position: "Software Engineer Intern",
 		location: "San Francisco, CA",
 		date: "May 2025 - Aug 2025",
@@ -11,7 +22,7 @@ export const workInfo = [
 			"<b>Reduced deployment rollbacks by 25%</b> by orchestrating a tool for engineers to update secrets in Azure Key Vaults and auto-generate GitHub pull requests to update secret versions in the codebase using <b>Flask</b> and <b>JavaScript</b>",
 			"<b>Minimized escalations to user operation specialists by 40%</b> by building a <a href='https://ping.harvey.ai' target='_blank'>web app</a> that pings internal Harvey endpoints and websockets to debug firewall and network issues for <b>500+ clients</b> across <b>50+ countries</b>"	
         ]
-        },
+    },
 	{
 		company: "PointClickCare",
 		position: "Software Engineer Intern",

@@ -79,8 +79,7 @@ export const NavBar = () => {
 							<Nav.Link to="/extracurriculars" className={activeLink === 'extracurriculars' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('extracurriculars'); navigate('/extracurriculars'); }}>Extracurriculars</Nav.Link>
 							<Nav.Link to="/awards" className={activeLink === 'awards' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('awards'); navigate('/awards'); }}>Awards</Nav.Link>
 							<Nav.Link to="/projects" className={activeLink === 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('projects'); navigate('/projects'); }}>Projects</Nav.Link>
-							<Nav.Link to="/blogs" className={activeLink === 'blogs' ? "active navbar-link" : "navbar-link"} onClick={() => { setNavExpanded(false); onUpdateActiveLink('blogs'); navigate('/blogs'); }}>Blogs</Nav.Link>
-						</Nav>
+						</Nav> 
 						<span className="navbar-text">
 							<div className="social-icon">
 								<a href="https://yiyanhh.substack.com/" className="social-buttons" target="blank"><img src={Substack} alt="Substack"/></a>

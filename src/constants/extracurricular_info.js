@@ -1,5 +1,14 @@
 export const extracurricularData = [
   {
+        id: 'felicis-fellow',
+        title: 'AI Engineering Fellow',
+        date: 'Jun 2026',
+        organization: 'Felicis',
+        image: '/images/extracurriculars/felicis.jpg',
+        description: 'Connecting with Felicis partners and founders on how to become a successful founder. Located in San Francisco.',
+        link: 'https://www.felicis.com/fellows'
+  },
+  {
     id: 'pareto-fellow',
     title: 'Engineering Fellow',
     date: 'Jan 2026 - Present',
@@ -11,7 +20,7 @@ export const extracurricularData = [
   {
     id: 'kp-fellow',
     title: 'Engineering Fellow',
-    date: 'May 2025 - Present',
+    date: 'May 2025 - Aug 2025',
     organization: 'Kleiner Perkins',
     image: '/images/extracurriculars/kpfellow.png',
     description: 'Connecting with VCs and startup founders in the SF Bay Area. Selected as 1 of 30 fellows from 5000+ applicants.',
