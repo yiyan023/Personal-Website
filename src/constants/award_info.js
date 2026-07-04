@@ -1,7 +1,15 @@
 export const awardData = [
   {
+    id: 'felicis-hackathon',
+    title: "Winner of Felicis Fellows Hackathon",
+    date: 'June 2026',
+    organization: 'Felicis',
+    image: '/images/awards/felicis.jpg',
+    explanation: "This award was presented by Felicis Partners and founders for technical difficulty, pitch, and market fit. I was awarded $25,000 for building security harnesses for 50 parallel RL environments to protect them from prompt injections."
+  },
+  {
     id: 'edinburgh-exchange',
-    title: "President's International Experience Scholarship",
+    title: "International Experience Scholarship",
     date: 'Jan 2026',
     organization: 'University of Waterloo',
     image: '/images/awards/europe.jpg',

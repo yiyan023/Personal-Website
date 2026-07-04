@@ -38,6 +38,11 @@
 	position: relative;
   }
 
+  .volunteer .extracurricular-single .image-section a {
+	display: block;
+	text-decoration: none;
+  }
+
   .volunteer .extracurricular-pair {
 	padding: 5px;
 	margin: 10px;

@@ -9,9 +9,11 @@ const ExtracurricularCard = ({ extracurricular, isFullWidth = false }) => {
 			<Col className="extracurricular-single" xs={10} md={8} xl={10}>
 				<Row className="align-items-center justify-content-center">
 					<Col xs={12} md={12} xl={6} className="image-section">
-						<div className='image-container'>
-							<img src={extracurricularImage} alt={extracurricular.title}/>
-						</div>
+						<a href={extracurricular.link} target="_blank" rel="noopener noreferrer">
+							<div className='image-container'>
+								<img src={extracurricularImage} alt={extracurricular.title}/>
+							</div>
+						</a>
 					</Col>
 					<Col xs={12} md={12} xl={6} className="description-section">
 						<div className='description '>
@@ -31,7 +33,7 @@ const ExtracurricularCard = ({ extracurricular, isFullWidth = false }) => {
 			<div className='image-container'>
 				<img src={extracurricularImage} alt={extracurricular.title}/>
 			</div>
-			<a href={extracurricular.link} target="blank">
+			<a href={extracurricular.link} target="_blank" rel="noopener noreferrer">
 				<div className='image-overlay'>
 					<p className='explain'>{extracurricular.description}</p>
 				</div>

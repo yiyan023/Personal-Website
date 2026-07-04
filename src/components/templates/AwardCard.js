@@ -14,7 +14,7 @@ const AwardCard = ({ award, isFullWidth = false }) => {
 						</div>
 					</Col>
 					<Col xs={12} md={12} xl={6} className="description-section">
-						<div className='description'>
+						<div className='description '>
 							<h2>{award.title}</h2>
 							<p>{award.date} - {award.organization}</p>
 							<hr />
@@ -31,15 +31,15 @@ const AwardCard = ({ award, isFullWidth = false }) => {
 			<div className='image-container'>
 				<img src={awardImage} alt={award.title}/>
 			</div>
-			<div className='image-overlap'>
-				<p className="explain">{award.explanation}</p>
+			<div className='image-overlay'>
+				<p className='explain'>{award.explanation}</p>
 			</div>
 			<div className='description'>
 				<h2>{award.title}</h2>
-				<p>{award.date} - {award.organization}</p>
+				<p className='describe'>{award.date} | {award.organization}</p>
 			</div>
 		</Col>
 	);
 }
 
-export default AwardCard 
+export default AwardCard

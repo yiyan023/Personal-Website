@@ -43,7 +43,7 @@ const AwardList = () => {
 						data-aos="fade-up" 
 						data-aos-anchor-placement="top-bottom" 
 						data-aos-delay="700" 
-						className='align-items-center justify-content-center'
+						className='justify-content-center align-items-center'
 					>
 						{pair.map((award) => (
 							<AwardCard 

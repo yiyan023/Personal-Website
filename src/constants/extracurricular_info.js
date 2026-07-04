@@ -5,7 +5,7 @@ export const extracurricularData = [
         date: 'Jun 2026',
         organization: 'Felicis',
         image: '/images/extracurriculars/felicis.jpg',
-        description: 'Connecting with Felicis partners and founders on how to become a successful founder. Located in San Francisco.',
+        description: 'Connecting with Felicis partners and founders on how to become a successful entrepreneur. Located in San Francisco.',
         link: 'https://www.felicis.com/fellows'
   },
   {
