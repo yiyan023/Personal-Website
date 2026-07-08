@@ -50,7 +50,7 @@ export const Banner = () => {
 							<h1 className="name">{`Hi, I'm Yiyan Huang:`}</h1>
 							<div className="fix-height"><h1 className="role">{text}</h1></div>
 							<p className="normal-text">A third-year CS student at the University of Waterloo</p>
-						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/1RvzzjGqJMS9j6rdPNrTps5KWr7EwIUny/view?usp=sharing')}>VIEW RESUME <ArrowRightCircle className="resume" size={22} /></button>
+						<button className="resume-button" onClick={() => window.open('https://drive.google.com/file/d/1vYbXYwnDJ6rOgWOMAPFH-JkZcWOrzlOA/view?usp=sharing')}>VIEW RESUME <ArrowRightCircle className="resume" size={22} /></button>
 					</Col>
 				</Row>
 				</div>
